@@ -1,0 +1,36 @@
+.interest-holder-1 {
+    position: relative;
+    border:1px solid;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+}
+
+.interest {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
+    border:dashed;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.interest-header {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.interest li {
+    height:60px;
+    width:30%;
+    border: 1px solid;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

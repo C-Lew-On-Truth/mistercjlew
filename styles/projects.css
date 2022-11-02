@@ -1,0 +1,165 @@
+.project-holder {
+    margin: 5% auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    color: #A47028;
+}
+
+.project-1, .project-2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 45%;
+    height: 80%;
+    border: 1px dashed;
+    overflow: hidden;
+}
+
+.project-title-1, .project-title-2 {
+    position: absolute;
+    top: 20px;
+}
+
+
+
+.rap-banner {
+    margin: auto;
+    cursor: pointer;
+    width: 75%;
+    transition: 1s;
+}
+
+.rap-banner img {
+    width: 100%;
+    height: auto;
+}
+
+.rap-banner:hover {
+    width: 80%;
+}
+
+.main-carousel {
+    margin: 2% auto;
+    position: relative;
+    padding: 10px;
+    width: 70%;
+    height:300px;
+    box-sizing: border-box;
+    border:dashed;
+}
+
+.carousel-track-container {
+    overflow: hidden;
+    width: 100%;
+    height:100%;
+    position: relative;
+    border:dashed;
+}
+
+.carousel-track {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    height: 60%;
+    transition: .8s;
+    border:dashed;
+}
+
+.carousel__slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.movie-title {
+    position:absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.video-slide {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.carousel-button-left, .carousel-button-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+    border: 0;
+    background: transparent;
+    color: white;
+    font-size: 70px;
+    transition: 1s;
+}
+
+.carousel-button-left:hover, .carousel-button-right:hover {
+    font-size: 65px;
+}
+
+
+.carousel-button-left {
+    left: -60px;
+}
+
+.carousel-button-right {
+    right: -60px;
+}
+
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.indicator {
+    border: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    z-index: 1;
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+.indicator.current-slide {
+    background: white;
+}
+
+.hidden {
+    display: none;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .project-holder {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 10%;
+        padding-bottom: 5%;
+        height: 100%;
+    }
+
+    .project-1, .project-2 {
+        width: 90%;
+        padding: 1%;
+        margin: 5% auto;
+        height: 90%;
+    }
+}
