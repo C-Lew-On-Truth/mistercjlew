@@ -1,3 +1,4 @@
+/*
 .page-headers {
   display: flex;
   flex-direction: column;
@@ -63,7 +64,7 @@
     position: absolute;
     top:50%;
     transform:translateY(-50%);
-    */
+  
 }
 
 .inner-child-1 {
@@ -101,9 +102,9 @@
   font-size: 32px;
   text-shadow: 2px 2px black;
 }
-
+*/
 /* ------ Menu Styles -----*/
-
+/*
 @media screen and (max-width: 1100px) {
   .page-headers h1 {
     margin: 0;
@@ -145,12 +146,12 @@
 }
 
 @media screen and (max-width: 500px) {
-    /*
+  
   .parent-box-1 {
     flex-direction: column;
     height: auto;
   }
-  */
+  
 
 
   .child-boxes {
@@ -163,3 +164,4 @@
     font-size: 22px;
   }
 }
+*/
