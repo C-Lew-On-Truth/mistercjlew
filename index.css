@@ -39,6 +39,32 @@
     min-width: 100%;
     min-height: 100%;
 }
+
+.go-home {
+  position:absolute;
+  top:2%;
+  right:2%;
+  cursor:pointer;
+  z-index: 4;
+  border:2px solid #A47028;
+  border-radius: 5px;
+  font-family: Impact;
+  font-size: 16px;
+  width:120px;
+  height:30px;
+  background:#A47028;
+  color:black;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.go-home:hover {
+  color:#A47028;
+  background-color:transparent;
+}
 /*
 .nav-bar {
     margin: 0;
