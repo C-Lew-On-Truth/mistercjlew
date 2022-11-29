@@ -1,22 +1,14 @@
-.interest-holder-1 {
+.interest-holder-main {
     position: relative;
     border:1px solid;
     display:flex;
     flex-direction: column;
-    align-items: center;
-    width:100%;
-}
-
-.interest {
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    width:100%;
-    border:dashed;
-    width:100%;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    width:90%;
+    height:80%;
+    flex-wrap: nowrap;
+    background:green;
 }
 
 .interest-header {
@@ -25,10 +17,38 @@
     align-items: center;
 }
 
+.interest-holder-inner {
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    width:100%;
+    height:80%;
+    background:blue;
+}
+
+.interest {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    width:50%;
+    align-items: center;
+    justify-content: center;
+    background:purple
+}
+
+.gif-holder {
+    width:25%;
+    height:60%;
+    background:black;
+}
+
+
+
 .interest li {
     height:60px;
     width:30%;
-    border: 1px solid;
     display:flex;
     flex-direction: row;
     align-items: center;
