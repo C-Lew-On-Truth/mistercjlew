@@ -49,7 +49,7 @@
   border:2px solid #A47028;
   border-radius: 5px;
   font-family: Impact;
-  font-size: 16cleapx;
+  font-size: 16px;
   width:120px;
   height:30px;
   background:#A47028;
@@ -104,6 +104,7 @@
     align-items: center;
     justify-content: space-evenly;
     z-index: 3;
+    height:auto;
 }
 
 .page-holder {
@@ -239,25 +240,7 @@
     text-shadow: 2px 2px black;
   }
   
-  @media only screen and (max-width: 1000px) {
 
-    .subject-holder {
-        margin:10% auto;
-    }
-
-    .page-holder>h1 {
-        position: absolute;
-        top: 2px;
-        font-size: 28px;
-        color: #A47028;
-        text-transform: uppercase;
-    }
-
-
-    .page-holder {
-        height: 100%;
-        padding: 2%
-    }
 }
   
   @media screen and (max-width: 1100px) {
@@ -275,7 +258,36 @@
     text-align: center;
     width: 60%;
   }
-  
+
+  @media only screen and (max-width: 1000px) {
+
+    .subject-holder {
+        margin:10% auto;
+        height:100%
+    }
+
+    .page-holder>h1 {
+        top: 2px;
+        font-size: 28px;
+        color: #A47028;
+        text-transform: uppercase;
+    }
+
+
+    .page-holder {
+        height: 100%;
+        padding: 2%
+    }
+
+    .go-home {
+      top:-1%;
+      left:50%;
+      transform: translateX(-50%);
+      font-size: 12px;
+      width:80px;
+      height:25px;
+    }
+  }
   @media screen and (max-width: 700px) {
     .child-boxes, .work-boxes {
       width: 150px;
@@ -323,7 +335,7 @@
     }
 
     .page-holder {
-        height:auto;
+        height:100%;
     }
 
     .parent-box-1, .parent-box-2 {
