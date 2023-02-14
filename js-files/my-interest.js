@@ -1,4 +1,4 @@
-import "./interest-content";
+//gimport "./interest-content";
 
 console.log(window.innerWidth);
 

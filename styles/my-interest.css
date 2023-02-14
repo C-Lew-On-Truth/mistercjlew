@@ -26,6 +26,7 @@
 }
 
 .interest {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -42,6 +43,15 @@
   align-items: center;
   justify-content: center;
   font-size: 14px;
+}
+
+.content {
+  position: absolute;
+  width:100% !important;
+  height:100% !important;
+  background:black;
+  color:white;
+  display:none;
 }
 
 .interest div:hover {
