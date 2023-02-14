@@ -64,7 +64,7 @@ interest.onmouseover = function (ev) {
 
 interest.onmouseleave = function (ev) {
   gifHolder.innerHTML = "";
-  gifHolder.style.backgroundImage = "url(../media/muppet.gif)";
+  gifHolder.style.backgroundImage = "url(media/muppet.gif)";
   content.style.display = "none"
 };
 
