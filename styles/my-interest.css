@@ -49,9 +49,14 @@
   position: absolute;
   width:100% !important;
   height:100% !important;
+  padding:10px;
   background:black;
   color:white;
   display:none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border:dashed;
 }
 
 .interest div:hover {

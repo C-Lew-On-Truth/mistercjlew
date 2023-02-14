@@ -1,5 +1,4 @@
-let entries = {
-    family:"FAMILY"
+export let entries = {
+    family:`FAMILY`
 };
 
-export { entries };

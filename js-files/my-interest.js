@@ -1,4 +1,4 @@
-//gimport "./interest-content";
+import { entries } from "./interest-content.js";
 
 console.log(window.innerWidth);
 
@@ -70,11 +70,12 @@ interest.onmouseleave = function () {
 
 interest.onclick = function (ev) {
   let target = ev.target.textContent;
- content.style.display = "block"
+ content.style.display = "flex"
   switch (target) {
     case "Family":
       gifHolder.style.backgroundImage = "none";
       gifHolder.textContent = `FAMILY`;
+      content.textContent = entries.family
       break;
     case "Coaching":
       gifHolder.style.backgroundImage = "none";
