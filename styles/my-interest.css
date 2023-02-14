@@ -132,9 +132,6 @@
 
 @media screen and (max-width: 500px) {
 
-    .interest-header {
-        
-    }
   .interest-holder-main {
     position: relative;
     height: 100vh;
