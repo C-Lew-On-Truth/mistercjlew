@@ -65,52 +65,15 @@
   color:#A47028;
   background-color:transparent;
 }
-/*
-.nav-bar {
-    margin: 0;
-    border: 0;
-    position: absolute;
-    z-index: 1;;
-    top: 0;
-    width: 100vw;
-    background: transparent;
-    height: 60px;
-    display: grid;
-    place-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
 
-.nav-bar a {
-    display: grid;
-    place-items: center;
-    color: #A47028;
-    width: 25vw;
-    height: 100%;
-    cursor: pointer;
-    font-size: 22px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
 
-.nav-bar a:hover {
-    background: #A47028;
-    color: black;
-}
-*/
-.subject-holder {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    z-index: 3;
-    height:auto;
-}
 
 .page-holder {
+  position: relative;
+    padding:5px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     width: 95vw;
     height:90vh;
@@ -120,29 +83,29 @@
     color: #A47028;
 }
 
-.page-holder>h1 {
-    font-size: 40px;
-    color: #A47028;
-    text-transform: uppercase;
-}
-
 .page-headers {
+  position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
+    height:auto;
   }
+
+  .page-headers h1 {
+    font-size: 40px;
+    margin: 0;
+  }
+  
 
   .page-headers p {
     font-size:18px;
     width:100%;
+    text-transform: uppercase;
   }
   
-  .page-headers h1 {
-    margin: 0;
-  }
-  
+
   .greater-parent-box {
     display: flex;
     flex-direction: column;
@@ -150,7 +113,6 @@
     justify-content: space-evenly;
     height: auto;
     width: 100%;
-    margin: 2%;
   }
   
   .parent-box-1,
@@ -160,7 +122,6 @@
     align-items: center;
     justify-content: space-evenly;
     height: 200px;
-    margin:1%;
   }
 
   .parent-box-1 {
@@ -280,7 +241,6 @@
     }
 
     .go-home {
-      top:-1%;
       left:50%;
       transform: translateX(-50%);
       font-size: 12px;

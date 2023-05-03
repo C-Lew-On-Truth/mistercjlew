@@ -5,30 +5,46 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="media/c-lew-favicon.png" type="image/png" />
-    <link rel="stylesheet"  href="index.css" />
+    <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" type="text/css" href="videos.css" />
-    <link rel="stylesheet" type="text/css" href="projects.css" />
-   
   </head>
 
   <body>
-    
     <div class="body-container">
-     
-        <div id="projects" class="page-holder">
-          <a href="index.html" class="go-home">GO HOME</a>
-            <h1>Clayton's Home Movies</h1>
-            <div class="project-holder">
-  
-      
+      <div id="projects" class="page-holder">
+        <a href="index.html" class="go-home">GO HOME</a>
+        <div class="page-headers">
+          <h1>Clayton's Home Movies</h1>
+        </div>
+
+        <div class="video-player">
+          <div class="current-video">
+            <h1>HOVER OVER WHICH VIDEO TO CHOOSE BELOW!</h1>
+            <video src=""/>
           </div>
 
+          <div class="video-options">
+            <div class="vid-option">
+              <video class="recon" src="media/spor_original.mp4"/>
+            </div>
+
+            <div class="vid-option">
+              <video class="sunday" src="media/sunday_skate_video.mp4" />
+            </div>
+
+            <div class="vid-option">
+              <video class="slow" src="media/slow_clouds.mp4" />
+            </div>
+
+          </div>
+
+        </div>
+      </div>
 
       <video class="video" autoplay loop muted>
         <source src="media/slow_clouds.mp4" />
       </video>
     </div>
-    <script src="projects.js"></script>
+    <script src="videos.js"></script>
   </body>
-
 </html>
