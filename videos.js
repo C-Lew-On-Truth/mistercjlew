@@ -1,6 +1,6 @@
 //import { info } from "./video-info.js";
 
-const vidOptions = document.querySelectorAll(".vid-option");
+const vidOptions = document.querySelectorAll(".vid-option video");
 const videoPlayer = document.querySelector(".video-player");
 const videoList = [
   "media/spor_original.mp4",
@@ -8,9 +8,16 @@ const videoList = [
   "media/slow_clouds.mp4",
 ];
 
+//carousel code
 const videoOptions = document.querySelector(".video-options");
+const prev = document.querySelector(".prev")
+const next = document.querySelector(".next")
+
+
+//carousel code
 let vidSource = document.querySelector(".current-video video");
-let vidName = document.querySelector(".current-video h1")
+let vidPlaceText = document.querySelector(".current-video h1");
+let vidName = document.querySelector(".vid-names")
 
 vidSource.src = "";
 vidSource.controls = false;
@@ -18,30 +25,32 @@ vidSource.controls = false;
 videoPlayer.onmouseleave = (ev) => {
   vidSource.controls = false;
   vidSource.src = "";
-  vidName.textContent ="HOVER OVER WHICH VIDEO TO CHOOSE BELOW!"
+  vidPlaceText.textContent ="HOVER OVER WHICH VIDEO TO CHOOSE BELOW!"
 };
 
 videoOptions.onmouseover = (ev) => {
-  let target = ev.target.className;
-
+let target = ev.target.className
   switch (target) {
     case "recon":
       vidSource.src = videoList[0];
       vidSource.controls = true;
       vidSource.style.display = "block";
       vidName.textContent ="SWEET PLANS OF REVENGE"
+      vidPlaceText.textContent = ""
       break;
     case "sunday":
       vidSource.src = videoList[1];
       vidSource.controls = true;
       vidSource.style.display = "block";
       vidName.textContent ="SUNDAY"
+      vidPlaceText.textContent = ""
       break;
     case "slow":
       vidSource.src = videoList[2];
       vidSource.controls = true;
       vidSource.style.display = "block";
       vidName.textContent ="DEMO DUMMY"
+      vidPlaceText.textContent = ""
       break;
   }
 };
