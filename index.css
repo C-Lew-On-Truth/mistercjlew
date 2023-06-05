@@ -1,19 +1,8 @@
 * body {
     margin: 0;
     border: 0;
-    overflow-x: hidden;
+  
     background: black;
-}
-
-.body-container {
-    position: relative;
-    box-sizing: border-box;
-    font-family: Impact;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height:100vh;
 }
 
 ::-webkit-scrollbar {
@@ -31,6 +20,60 @@
     background: #A47028;
 }
 
+.body-container {
+  position: relative;
+  box-sizing: border-box;
+  font-family: Impact;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height:100vh;
+  z-index: 1;
+}
+
+.nav-bar {
+  width: 100vw;
+  background:red;
+  height:5%;
+  position:absolute;
+  top:0;;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav-bar li{
+  list-style: none;
+}
+
+iframe {
+  border: 0;
+  margin:0;
+  width:90%;
+  height:80%;
+  border:1px dashed green;
+}
+
+.pro-bar {
+  width: 100vw;
+  background:blue;
+  height:5%;
+  position:absolute;
+  bottom:0;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 2;
+
+}
+
+.pro-bar li{
+  list-style: none;
+}
+
 .video {
     position: fixed;
     top: 0;
@@ -40,27 +83,9 @@
     min-height: 100%;
 }
 
-.go-home {
-  position:absolute;
-  top:2%;
-  right:2%;
-  cursor:pointer;
-  z-index: 4;
-  border:2px solid #A47028;
-  border-radius: 5px;
-  font-family: Impact;
-  font-size: 16px;
-  width:120px;
-  height:30px;
-  background:#A47028;
-  color:black;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-}
+@media only screen and (max-width: 1000px) {
 
+<<<<<<< HEAD
 .go-home:hover {
   color:#A47028;
   background-color:transparent;
@@ -122,119 +147,22 @@
     align-items: center;
     justify-content: space-evenly;
     height: 200px;
+=======
+  .body-container {
+    height:100dvh;
+  }
+  iframe {
+    width:100%;
+    height:50%;
+    overflow-y: scroll;
+>>>>>>> 83722bd (brand new start)
   }
 
-  .parent-box-1 {
-    width: 90%;
-  }
-
-  .parent-box-2 {
-    width: 70%;
-  }
-  
-  .child-boxes,
-  .work-boxes {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 230px;
-    height:230px;
-    cursor: pointer;
-    overflow: hidden;
-    border: 0.5px solid;
-    border-radius: 50%;
-  }
-  
-  .inner-child-1,
-  .inner-child-2,
-  .inner-child-3 {
-    background-repeat: round;
-    opacity: 0.4;
-    /*
-      position: absolute;
-      top:50%;
-      transform:translateY(-50%);
-      */
-  }
-  
-  .inner-child-1 {
-    width: 60%;
-  }
-  
-  .inner-child-2 {
-    width: 50%;
-  }
-  
-  .inner-child-3 {
-    width: 50%;
-  }
-  
-  .child-boxes h1, .work-boxes h1 {
-    font-size: 24px;
-    text-align: center;
-    width: 100%;
-    text-shadow: 2px 2px white;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 3;
-    margin: 0;
-  }
-  
-  .child-boxes:hover > img {
-    transition: 0.8s;
-    transform: scale(110%);
-    opacity: 1;
-  }
-  
-  .child-boxes:hover > h1 {
-    transition: 0.8s;
-    font-size: 32px;
-    text-shadow: 2px 2px black;
-  }
-
-  .work-boxes:hover > h1 {
-    font-size:26px;
-    transition: 0.8s;
-    text-shadow: 2px 2px black;
-  }
-  
 
 }
-  
-  @media screen and (max-width: 1100px) {
-    .page-headers h1 {
-      margin: 0;
-      font-size: 25px;
-    }
-  
-    .parent-box-2 h1 {
-      font-size:22px;;
-    }
-  }
-  
-  .entry {
-    text-align: center;
-    width: 60%;
-  }
-
-  @media only screen and (max-width: 1000px) {
-
-    .subject-holder {
-        margin:10% auto;
-        height:100%
-    }
-
-    .page-holder>h1 {
-        top: 2px;
-        font-size: 28px;
-        color: #A47028;
-        text-transform: uppercase;
-    }
 
 
+<<<<<<< HEAD
     .page-holder {
         height: 100%;
         padding: 2%
@@ -344,3 +272,5 @@
 }
 */
 
+=======
+>>>>>>> 83722bd (brand new start)
