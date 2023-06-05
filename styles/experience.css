@@ -1,5 +1,72 @@
 .experience {
-    color:white;
-    z-index: 1;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #A47028;
+    ;
+}
+
+.experience h1 {
     text-align: center;
+}
+
+.experience-container {
+    width: 100%;
+    height: 100%;
+    border: dashed .5px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.work, .skills {
+   
+    border: dashed;
+}
+
+.work {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height:auto;
+}
+
+.work h2 {
+    text-align: center;
+}
+
+
+.work-inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+
+.companies {
+    display: grid;
+    place-items: center;
+    width: 50%;
+    height: 50%;
+}
+
+.companies h3 {
+    margin-top:3px;
+}
+
+.companies h4 {
+     margin-top:2px;
+     margin-bottom:8px;
+}
+
+
+ .icon {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+
+.skills {
+    width: 50%;
 }
