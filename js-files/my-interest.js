@@ -1,10 +1,11 @@
-import { entries } from "./my-interest-content.js";
+import { entries } from "./interest-content.js";
 
 console.log(window.innerWidth);
 
+
 const interest = document.querySelector(".interest");
 let gifHolder = document.querySelector(".gif-holder");
-let content = document.querySelector(".content");
+let content = document.querySelector(".content")
 
 interest.onmouseover = function (ev) {
   let target = ev.target.textContent;
@@ -62,19 +63,19 @@ interest.onmouseover = function (ev) {
 };
 
 interest.onmouseleave = function () {
-  gifHolder.style.backgroundImage = "url('media/muppet.gif')";
+  gifHolder.style.backgroundImage = "url('media/muppet.gif')"
   gifHolder.innerHTML = "";
-  content.style.display = "none";
+  content.style.display = "none"
 };
 
 interest.onclick = function (ev) {
   let target = ev.target.textContent;
-  content.style.display = "flex";
+ content.style.display = "flex"
   switch (target) {
     case "Family":
       gifHolder.style.backgroundImage = "none";
       gifHolder.textContent = `FAMILY`;
-      content.textContent = entries.family;
+      content.textContent = entries.family
       break;
     case "Coaching":
       gifHolder.style.backgroundImage = "none";
