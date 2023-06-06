@@ -21,7 +21,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  width:100%;
+  width: 100%;
 }
 
 .experience h1 {
@@ -35,27 +35,25 @@
   align-items: center;
   justify-content: space-evenly;
   flex-direction: row;
-  height:80vh;
+  height: 80vh;
 }
 
 .work,
 .skills {
-  border: dashed;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
+  height: 400px;
 }
 
 .work {
   width: 40%;
-
- 
 }
 
 .skills {
- width:50%;
- height:80%;
+  width: 50%;
+
 }
 
 .work h2,
@@ -67,14 +65,15 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 100%;
+  border: .5px dashed;
 }
 
 .companies {
   display: grid;
   place-items: center;
   width: 50%;
-
+  margin: 2% auto;
+  height: 25%;
 }
 
 .companies h3 {
@@ -92,8 +91,8 @@
 .icon {
   position: relative;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 
 .skills {
@@ -106,15 +105,15 @@
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  height:100%;
+
 }
 
 .media-skills,
 .web-skills {
   width: 40%;
-  border: dashed;
-  height:fit-content;
-  margin-bottom:5%;
+  border: .5px dashed;
+  height: fit-content;
+  margin-bottom: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -132,18 +131,19 @@
   border: 1px solid #a47028;
   background-color: #a47028;
   width: 140px;
-  height: 80px;
+  height: 50px;
   display: grid;
   place-items: center;
   text-align: center;
-  color:black;
+  color: black;
 }
 
 .media-list,
 .web-list {
   margin-bottom: 5%;
   width: 50%;
-  height:160px;
+  height: 200px;
+  margin: 2% auto;
 }
 
 .web-list.ul,
@@ -156,28 +156,27 @@
 
 .web-list li,
 .media-list li {
-  text-shadow: 1px 1px black;;
-  font-size:15px;
-} 
+  text-shadow: 1px 1px black;
+  ;
+  font-size: 17px;
+}
 
 @media only screen and (max-width: 900px) {
   .experience-container {
     flex-direction: column;
     justify-content: space-evenly;
-    height:auto
+    height: auto
   }
 
-  .work {
-    width: 90%;
-  }
 
-  .skills {
+  .skills, .work {
     margin: 5% auto;
-    width: 90%;
-    height:auto
+    width: 100%;
+    height: auto
   }
 
   .work-inner {
+    border:0;
     flex-wrap: nowrap;
     width: 100%;
   }
@@ -193,5 +192,12 @@
   .work-inner {
     flex-wrap: wrap;
     width: 100%;
+  }
+
+
+  .media-skills,
+  .web-skills {
+    width: 60%; 
+    border:0;
   }
 }
