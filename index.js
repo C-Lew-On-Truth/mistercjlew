@@ -19,3 +19,5 @@ navBar.onclick = (ev) => {
       break;
   }
 };
+
+console.log('seen')
