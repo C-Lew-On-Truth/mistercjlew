@@ -157,7 +157,6 @@
 .web-list li,
 .media-list li {
   text-shadow: 1px 1px black;
-  ;
   font-size: 17px;
 }
 
@@ -200,4 +199,11 @@
     width: 60%; 
     border:0;
   }
+
+
+.web-list li,
+.media-list li {
+  text-shadow: 1px 1px black;
+  font-size: 14px;
+}
 }
