@@ -15,7 +15,7 @@ navBar.onclick = (ev) => {
       content.src = "experience.html";
       break;
     case "CONTACT":
-      content.src = "contact-me.html";
+      content.src = "contact.html";
       break;
   }
 };

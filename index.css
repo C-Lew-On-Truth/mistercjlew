@@ -1,10 +1,11 @@
 * body {
-    margin: 0;
-    border: 0;
+  margin: 0;
+  border: 0;
   overflow: hidden;
-    background: black;
+  background: black;
 
 }
+
 /*
 ::-webkit-scrollbar {
     width: 6px;
@@ -26,81 +27,89 @@
   position: relative;
   box-sizing: border-box;
   font-family: Impact;
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height:100vh;
-  color:#A47028;;
+  height: 100vh;
+  color: #A47028;
+  ;
   z-index: 1;
 }
 
 .nav-bar, .pro-bar {
   width: 100vw;
-  color:black;
-  background:#A47028;
-  height:6%;
-  position:absolute;
-  display:flex;
+  color: black;
+  background: #A47028;
+  height: 6%;
+  position: absolute;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  border:0;
+  border: 0;
 }
 
 .nav-bar {
-  top:0;;
+  top: 0;
+  ;
 }
 
 .pro-bar {
-  bottom:0;
+  bottom: 0;
 }
 
-.nav-bar li, .pro-bar li{
+.nav-bar li, .pro-bar li {
   list-style: none;
-  height:100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width:33.3%;
-  font-size:18px;
+  width: 33.3%;
+  font-size: 18px;
   cursor: pointer;
+  border: 1px transparent solid
 }
 
-.nav-bar li:hover, .pro-bar li:hover{
-  background:black;
-  color:#A47028;
+.nav-bar li:hover {
+  background: black;
+  color: #A47028;
+  border-bottom: #A47028 solid 1px;
+}
+
+.pro-bar li:hover {
+  background: black;
+  color: #A47028;
+  border-top: #A47028 solid 1px;
 }
 
 iframe {
   border: 0;
-  margin:0;
-  width:90%;
-  height:80%;
-  border:1px dashed #a47028;
+  margin: 0;
+  width: 90%;
+  height: 80%;
+  border: 1px dashed #a47028;
 }
 
 .video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    min-width: 100%;
-    min-height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 @media only screen and (max-width: 1000px) {
 
   .body-container {
-    height:100dvh;
+    height: 100dvh;
   }
-  
+
   iframe {
-    width:100%;
-    height:70%;
+    width: 100%;
+    height: 70%;
     overflow-y: scroll !important;
   }
 }
-
-
