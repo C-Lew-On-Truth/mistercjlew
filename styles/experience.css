@@ -108,7 +108,7 @@
 
 .meredith {
   background-image: url("../media/meredith.jpg");
-  background-size: contain;
+  background-size: 130%;
   background-color: white;
 }
 
@@ -153,14 +153,14 @@
 .media-skills h3 {
   border: 1px solid #a47028;
   background-color: #a47028;
-  width: 140px;
-  height: 50px;
+  width: 160px;
+  height: 30px;
   padding: 8px;
   display: grid;
   place-items: center;
   text-align: center;
   color: black;
-  height: 30px;
+  font-size: 20px;
 }
 
 .media-list,
@@ -208,7 +208,6 @@
 }
 
 @media only screen and (max-width: 1200px) {
-
   .web-list li,
   .media-list li {
     text-shadow: 1px 1px black;
@@ -261,4 +260,17 @@
     width: 60%;
     border: 0;
   }
+
+  .web-skills h3,
+.media-skills h3 {
+  border: 1px solid #a47028;
+  background-color: #a47028;
+  width: 140px;
+  padding: 3px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: black;
+  font-size: 17px;
+}
 }

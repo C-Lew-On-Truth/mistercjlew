@@ -4,18 +4,18 @@ const navBar = document.querySelector(".nav-bar");
 const proBar = document.querySelector(".pro-bar");
 let content = document.querySelector(".content");
 
-content.src = "contact.html"
+content.src = "experience.html"
 
 navBar.onclick = (ev) => {
-  let target = ev.target.textContent;
+  let target = ev.target.className;
   switch (target) {
-    case "ABOUT":
+    case "about":
       content.src = "about.html";
       break;
-    case "EXPERIENCE":
+    case "experience":
       content.src = "experience.html";
       break;
-    case "CONTACT":
+    case "contact":
       content.src = "contact.html";
       break;
   }
