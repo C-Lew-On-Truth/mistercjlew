@@ -27,17 +27,10 @@
 .intro-holder {
   width: 100%;
   height: 100%;
-
   margin: 2%;
   z-index: 1;
   position: relative;
 }
-
-.about h2 {
-  transition: 1.5s;
-}
-
-
 
 .inner-about {
   width: 90%;
@@ -69,6 +62,7 @@
   text-align: center;
   color: black;
   font-size:25px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .info-1-inner, .info-2-inner {
@@ -93,7 +87,7 @@
   font-size: 18px;
   width: 100%;
   text-shadow: .5px .5px black;
-  ;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .center-piece {
@@ -105,6 +99,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  height:90%;
 }
 
 .bitmoji-pic {
@@ -118,7 +113,7 @@
 .thank-message {
   position: absolute;
   top: 0;
-  height: 100%;
+  height: 300px;
   width: 300px;
   font-size: 35px;
   display: grid;
@@ -132,6 +127,7 @@
   opacity: 0;
   transition: 1.5s;
   text-shadow: 1px 1px black;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .pic {
@@ -141,6 +137,11 @@
   transform: translateX(-50%);
   bottom: -500px;
   transition: 1.5s;
+}
+
+.intro-statement {
+  font-size:18px;
+  text-shadow: 1px 1px black;;
 }
 
 @media only screen and (max-width: 1000px) {
