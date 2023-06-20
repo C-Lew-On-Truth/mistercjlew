@@ -17,6 +17,6 @@ setTimeout(() => {
 
   setTimeout(() => {
     thankYouHolder.style.top =  "-500px"
-    pic.style.bottom = 0
+    pic.style.bottom = "-2px"
   }, 3000)
   
