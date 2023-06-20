@@ -17,34 +17,33 @@
 
           <div class="work-inner">
             <div class="companies">
-              <img class="icon" src="media/SeenThis.jpeg" />
-              <h3 class="company">SeenThis</h3>
-              <h4 class="company">Technical Producer</h4>
+              <div class="icon seen-this"></div>
+              <h3>SeenThis</h3>
+              <h4>Technical Producer</h4>
             </div>
 
             <div class="companies">
-              <img class="icon" src="media/ny1.jpg" />
-              <h3 class="company">Spectrum News NY1</h3>
-              <h4 class="company">Media Ingest Editor</h4>
+              <div class="icon ny-1"></div>
+              <h3>Spectrum News NY1</h3>
+              <h4>Media Ingest Editor</h4>
             </div>
 
             <div class="companies">
-              <img class="icon" src="media/meredith.jpg" />
-              <h3 class="company">Meredith Corporation</h3>
-              <h4 class="company">Video Ingest Technician</h4>
+              <div class="icon meredith"></div>
+              <h3>Meredith Corporation</h3>
+              <h4>Video Ingest Technician</h4>
             </div>
 
             <div class="companies">
-              <img class="icon" src="media/adobe.jpg" />
-              <h3 class="company">Adobe Stock</h3>
-              <h4 class="company">Media Operations Coordinator</h4>
+              <div class="icon adobe"></div>
+              <h3>Adobe Stock</h3>
+              <h4>Media Operations Coordinator</h4>
             </div>
           </div>
         </div>
         <div class="skills">
           <h2>Skills</h2>
           <div class="skills-inner">
-
             <div class="web-skills">
               <h3>Development</h3>
               <ul class="web-list">
@@ -70,10 +69,19 @@
                 <li>DSLR</li>
               </ul>
             </div>
+          </div>
 
+          <div>
+            <h2 class="resume">Resume</h2>
           </div>
         </div>
       </div>
     </div>
+    <script>
+      const resume = document.querySelector(".resume");
+resume.onclick = () => {
+    window.open('files/Resume_2023.pdf', '_blank');
+}
+    </script>
   </body>
 </html>

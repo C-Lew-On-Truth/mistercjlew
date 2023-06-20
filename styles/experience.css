@@ -41,10 +41,9 @@
 .work,
 .skills {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
   flex-direction: column;
-  height: 400px;
+  align-items: center;
+  height: 450px;
 }
 
 .work {
@@ -53,7 +52,6 @@
 
 .skills {
   width: 50%;
-
 }
 
 .work h2,
@@ -64,8 +62,11 @@
 .work-inner {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   border: .5px dashed;
+  height: 100%;
 }
 
 .companies {
@@ -73,7 +74,7 @@
   place-items: center;
   width: 50%;
   margin: 2% auto;
-  height: 25%;
+  height: 35%;
 }
 
 .companies h3 {
@@ -93,10 +94,33 @@
   border-radius: 50%;
   width: 80px;
   height: 80px;
+  border: .5px solid;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
-.skills {
-  width: 50%;
+.ny-1 {
+  background-image: url("../media/ny1.jpg");
+  background-size: 90%;
+  background-color: #203265;
+}
+
+.meredith {
+  background-image: url("../media/meredith.jpg");
+  background-size: contain;
+  background-color: white;
+}
+
+.adobe {
+  background-image: url("../media/adobe.jpg");
+  background-size: contain;
+}
+
+.seen-this {
+  background-image: url("../media/SeenThis.jpeg");
+  background-size: 90%;;
+  background-color: white;
 }
 
 .skills-inner {
@@ -105,7 +129,6 @@
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-
 }
 
 .media-skills,
@@ -132,10 +155,12 @@
   background-color: #a47028;
   width: 140px;
   height: 50px;
+  padding: 8px;
   display: grid;
   place-items: center;
   text-align: center;
   color: black;
+  height: 30px;
 }
 
 .media-list,
@@ -160,13 +185,43 @@
   font-size: 17px;
 }
 
+.resume {
+  margin: 0;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  border: 1px solid transparent;
+  width: 120px;
+  height: 35px;
+  text-shadow: 2px 2px black;
+  ;
+  font-size: 25px;
+}
+
+.resume:hover {
+  border: 1px solid #a47028;
+  background-color: transparent;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .web-list li,
+  .media-list li {
+    text-shadow: 1px 1px black;
+    font-size: 14px;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   .experience-container {
     flex-direction: column;
     justify-content: space-evenly;
     height: auto
   }
-
 
   .skills, .work {
     margin: 5% auto;
@@ -175,7 +230,7 @@
   }
 
   .work-inner {
-    border:0;
+    border: 0;
     flex-wrap: nowrap;
     width: 100%;
   }
@@ -185,6 +240,14 @@
     place-items: center;
     width: 45%;
   }
+
+  .companies h3 {
+    font-size: 15px;
+  }
+  
+  .companies h4 {
+    font-size: 11px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -193,17 +256,9 @@
     width: 100%;
   }
 
-
   .media-skills,
   .web-skills {
-    width: 60%; 
-    border:0;
+    width: 60%;
+    border: 0;
   }
-
-
-.web-list li,
-.media-list li {
-  text-shadow: 1px 1px black;
-  font-size: 14px;
-}
 }
