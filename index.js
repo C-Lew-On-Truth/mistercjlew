@@ -22,15 +22,15 @@ navBar.onclick = (ev) => {
 };
 
 proBar.onclick = (ev) => {
-  let target = ev.target.textContent;
+  let target = ev.target.className;
   switch (target) {
-    case "GitHub":
+    case "github":
       window.open('https://github.com/C-Lew-On-Truth', '_blank');
       break;
-    case "Linkedin":
+    case "linkedin":
       window.open('https://www.linkedin.com/in/clayton-lewis-1a604b92/', '_blank');
       break;
-    case "CodePen":
+    case "codepen":
       window.open('https://codepen.io/c-lew-on-truth', '_blank');
       break;
   }
