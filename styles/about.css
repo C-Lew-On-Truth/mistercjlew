@@ -204,7 +204,12 @@
     height:45px;
     text-shadow: .5px .5px black;
     list-style: none;
+    font-size:16px;
   }
+
+
+  
+  
 }
 
 
@@ -214,3 +219,53 @@
     font-size: 14px;;
   }
 }
+
+
+@media only screen and (max-width: 600px) {
+  .info-1-inner li, .info-2-inner li {
+    font-size: 14px
+  }
+}
+  
+@media only screen and (max-width: 300px) {
+
+  .center-piece {
+    width:80%;
+  }
+  
+  .bitmoji-pic {
+    width:200px;
+    height:200px;
+  }
+  
+  .thank-message {
+    width:200px;
+    height:200px;
+  }
+
+  .pic {
+    width: 200px !important;
+  }
+  
+  .thank-message p {
+    font-size:20px;
+  }
+
+  
+
+  .info-1 h2, .info-2 h2 {
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+    .intro-statement {
+      font-size: 14px;;
+      width:80%;
+    }
+    .info-1-inner li, .info-2-inner li {
+      font-size: 11px
+    }
+}
+
+
