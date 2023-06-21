@@ -1,4 +1,4 @@
-console.log(window.innerWidth);
+//console.log(window.innerWidth);
 
 const navBar = document.querySelector(".nav-bar");
 const proBar = document.querySelector(".pro-bar");
@@ -31,6 +31,7 @@ proBar.onclick = (ev) => {
       window.open('https://www.linkedin.com/in/clayton-lewis-1a604b92/', '_blank');
       break;
     case "codepen":
+
       window.open('https://codepen.io/c-lew-on-truth', '_blank');
       break;
   }
