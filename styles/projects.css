@@ -1,190 +1,293 @@
 ::-webkit-scrollbar {
-    width: 6px;
-    background: black;
-    height: 20px;
+  width: 6px;
+  background: black;
+  height: 20px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #A47028;
-    border-radius: 10px;
+  background: #a47028;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #A47028;
+  background: #a47028;
 }
 
-
 .projects {
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    color: #a47028;
-    text-align: center;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #a47028;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .inner-projects {
-    position: relative;
-    width: 90%;
-    height: 80vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
+  position: relative;
+  width: 90%;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.demo-reels, .web-work {
-    border: dashed .5px #a47028;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 80vh;
-    overflow: hidden;
-    justify-content: space-evenly;
+.demo-reels,
+.web-work {
+  border: dashed 0.5px #a47028;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  justify-content: space-evenly;
 }
 
 .inner-projects h2 {
-    margin: 0;
+  margin: 0;
+  text-shadow: 2px 2px black;
 }
 
 .demo-reels {
-    position: relative;
-    width: 60%;
-   
+  position: relative;
+  width: 60%;
+  height: 80vh;
 }
 
-.demos {
-    object-fit: contain;
-}
-
+/*------------- Web Projects Style Code--------------*/
 .web-work {
-    width: 35%;
+  position: relative;
+  width: 35%;
+  height: 60vh;
+  cursor: pointer;
 }
 
-/*------------- Video Slider Code--------------*/
+.web-work:hover {
+  background: rgb(164, 112, 40, 0.2);
+}
+
+.record-gif {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 60%;
+}
+
+.record-gif img {
+  width: 90%;
+  height: 90%;
+  transition: 0.5s;
+}
+
+.record-gif img:hover {
+  width: 95%;
+  height: 95%;
+}
+
+.rap-quiz-info {
+  margin: 0;
+  text-shadow: 1px 1px black;
+  animation: blink 0.9s linear infinite;
+  transition: 1s;
+}
+
+@keyframes blink {
+  0% {
+    color: #a47028;
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: #a47028;
+  }
+}
+
+.rap-quiz-info:hover {
+  animation: none;
+  transform: scale(120%);
+  color: white;
+}
+
+.rap-quiz-entry {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: black;
+  text-shadow: 1px 1px black;
+  display: none;
+}
+
+.rap-quiz-entry h2 {
+  color: red;
+}
+
+.line-1 {
+  width: 85%;
+  margin-top: 5px;
+  font-size: 14px !important;
+  font-style: italic;
+}
+.line-2 {
+  margin-top: -10px;
+  font-size: 20px;
+  color: white;
+}
+
+.line-3 {
+  margin-top: -15px;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.exit-rap-entry {
+    margin-top:-20px;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  background: transparent;
+  text-align: center;
+  border: 2px solid;
+  width: 80px;
+  height: 35px;
+  text-shadow: 1px 1px black;
+  font-size: px;
+  color: #a47028;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.exit-rap-entry:hover {
+  border: 3px solid #a47028;
+  text-shadow: none;
+  background: #a47028;
+  color: black;
+}
+
+/*------------- Web Projects Style Code--------------*/
+
+/*------------- Video Slider Style Code--------------*/
 .video-player {
-    position: relative;
-    width: 50%;
-    height: 50%;
-    background:yellow;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
+  position: relative;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-    position: relative;
-    width: 100%;
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /*  box-shadow is from materialize css's website */
+  position: relative;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*  box-shadow is from materialize css's website */
+}
 
+#carousel {
+  transition: 0.5s;
 }
 
 .clip-names {
-    color:#A47028;
-    background:green;
+  color: #a47028;
 }
 
 .container video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-button {
-    height: 10%;
-    border: none;
-    outline: none;
-    background: rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-    
-    display: flex;
-}
-
-button {
-
-    color: white;
-    border-width: 0 4px 4px 0;
-    display: inline-block;
-    padding: 10px;
-    transition: transform 0.3s ease-out;
-    outline: none;
-}
-
-#right-btn, #left-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+#right-btn,
+#left-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 40px;
+  font-weight: 400;
+  text-shadow: 0.5px 0.5px white;
+  transition: 0.5s;
+  user-select: none;
 }
 
 #right-btn {
-    right: -50px;
-}
-
-#right-btn .arrow {
-    transform: rotate(-45deg);
+  right: -70px;
 }
 
 #left-btn {
-    left: -50px;
+  left: -70px;
 }
 
-#left-btn .arrow {
-    transform: rotate(135deg);
+#right-btn:hover,
+#left-btn:hover {
+  text-shadow: 1px 0px 0px 1px black;
+  color: white;
 }
 
-/*------------- Video Slider Code--------------*/
+/*------------- Video Slider Style Code--------------*/
 
-.project-list {
-    background:green;
-    height:70%;
-    width:90%;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:center;
-}
-
-.rap-game {
-    cursor: pointer;
-}
+/*-------------web responsive code -------------------*/
 
 @media only screen and (max-width: 1200px) {
-    .projects {
-        height: auto
-    }
+  .projects {
+    height: auto;
+  }
 }
 
 @media only screen and (max-width: 900px) {
-    .projects {
-        height: auto
-    }
+  .projects {
+    height: auto;
+  }
 
-    .inner-projects {
-        width: 95%;
-        flex-direction: column;
-        height: auto;
-    }
+  .inner-projects {
+    width: 95%;
+    flex-direction: column;
+    height: auto;
+  }
 
-    .demo-reels, .web-work {
-        width: 95%;
-        margin: 3%
-    }
+  .demo-reels,
+  .web-work {
+    width: 95%;
+    margin: 3%;
+  }
 
-    .demo-reels {
-        height: 400px;
-    }
+  .demo-reels {
+    height: 400px;
+  }
 
-    .web-work {
-        height: auto;
-    }
+  .web-work {
+    height: 400px;
+  }
+
+  .record-gif {
+    width: 50%;
+    height: 60%;
+  }
+  
+  .record-gif img {
+    width: 70%;
+    height: 70%;
+  }
+  
+  .record-gif img:hover {
+    width: 80%;
+    height: 80%;
+  }
 }
 
-@media only screen and (max-width: 600px) {}
+/*
+@media only screen and (max-width: 600px) {
+}
+*/
+/*-------------web responsive code -------------------*/

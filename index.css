@@ -60,7 +60,6 @@ title {
   ;
 }
 
-
 .pro-bar {
   bottom: 0;
    justify-content: center;
@@ -83,21 +82,31 @@ title {
   background-size: 15%;
   background-repeat: no-repeat;
   background-position: center;
+  transition:.5s;
 }
 
 .pro-bar li:nth-child(2) {
   background-image: url(images/linked-in-black.png);
-  background-size: 15%;
+  background-size: 12%;
   background-repeat: no-repeat;
   background-position: center;
+  transition:.5s;
 }
 
 .pro-bar li:nth-child(3) {
   background-image: url(images/codepen.png);
-  background-size: 16%;
+  background-size: 12%;
   background-repeat: no-repeat;
   background-position: center;
-  
+  transition:.5s;
+}
+
+.pro-bar li:nth-child(1):hover {
+  background-size:18%;
+}
+.pro-bar li:nth-child(2):hover,
+.pro-bar li:nth-child(3):hover {
+  background-size:16%;
 }
 
 .nav-bar {
@@ -131,34 +140,12 @@ title {
   width:15%;
 }
 
-
-
 .nav-bar li:hover {
   background: black;
   color: #A47028;
   border-bottom: #A47028 solid 1px;
 }
-/*
-.pro-bar li:hover {
-  background: black;
-  color: #A47028;
-  border-top: #A47028 solid 1px;
-}
-.pro-bar li:hover {
-  background: black;
-  color: #a47028;
-}
 
-.github::before {
-  content:"GitHub"
-}
-.linkedin::before {
-  content:"LinkedIn"
-}
-.codepen::before {
-  content:"CodePen"
-}
-*/
 iframe {
   border: 0;
   margin: 0;
@@ -167,12 +154,6 @@ iframe {
   border: 1px dashed #a47028;
   z-index: 5;
 }
-
-/*
-iframe.content {
-  background-color: transparent;
-}
-*/
 
 .video {
   position: fixed;

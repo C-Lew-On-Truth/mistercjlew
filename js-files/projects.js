@@ -1,5 +1,5 @@
 
-
+/*--------demo reel carousel code-----------*/
 const clips = document.getElementById("carousel");
 const clipNames = document.querySelector(".clip-names");
 const rightBtn = document.getElementById("right-btn");
@@ -17,16 +17,17 @@ let clipList = [
   "WIVB Sabres Package"
 ] 
 
-clipNames.textContent= clipList[0]
+clipNames.textContent = clipList[0]
 clips.src = reels[0];
-
 let position = 0;
+
 
 const moveRight = () => {
   if (position >= reels.length - 1 && position >= clipList.length - 1) {
     position = 0;
     clips.src = reels[position];
     clipNames.textContent = clipList[position]
+ 
     return;
   }
   clips.src = reels[position + 1];
@@ -49,8 +50,37 @@ const moveLeft = () => {
 rightBtn.addEventListener("click", moveRight);
 leftBtn.addEventListener("click", moveLeft);
 
-let rapGame = document.querySelector(".rap-game");
-rapGame.onclick = function() {
- window.open("https://c-lew-on-truth.github.io/real-rap-fans/")
+/*--------demo reel carousel code-----------*/
+
+/*--------rap quiz code -----------*/
+let recordGif = document.querySelector(".record-gif");
+let rapQuizInfo = document.querySelector(".rap-quiz-info");
+let rapQuizEntry = document.querySelector(".rap-quiz-entry");
+let exitRapEntry = document.querySelector(".exit-rap-entry");
+recordGif .onclick = function() {
+ window.open("https://c-lew-on-truth.github.io/real-rap-fans/");
 }
-console.log("SEEN")
+
+rapQuizInfo.onclick = function() {
+  rapQuizEntry.style.transition = "1s"
+  setTimeout(() => {
+    rapQuizEntry.style.display = "flex";
+  }, 100)
+  setTimeout(() => {
+    rapQuizEntry.style.opacity = 1;
+  }, 500)
+
+}
+
+exitRapEntry.onclick = function() {
+  rapQuizEntry.style.transition = "1s"
+  setTimeout(() => {
+    rapQuizEntry.style.display = "none";
+  }, 1000)
+  setTimeout(() => {
+    rapQuizEntry.style.opacity = 0;
+  }, 500)
+}
+
+
+/*--------rap quiz code -----------*/

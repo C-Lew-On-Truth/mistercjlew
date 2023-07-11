@@ -9,7 +9,7 @@ setTimeout(() => {
 }, 1500);
 
 setTimeout(() => {
-  intro.style.transition = "2s";
+  intro.style.transition = "1s";
   intro.style.opacity = 1;
   intro.textContent = "I'm Clayton Lewis";
 }, 3000);
@@ -21,4 +21,4 @@ setTimeout(() => {
 setTimeout(() => {
   thankYouHolder.style.top = "-500px";
   pic.style.bottom = "-2px";
-}, 3000);
+}, 2000);
