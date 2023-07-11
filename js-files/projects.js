@@ -1,90 +1,56 @@
 
 
-const track = document.querySelector(".carousel-track");
-const slides = Array.from(track.children);
-const leftButton = document.querySelector(".carousel-button-left");
-const rightButton = document.querySelector(".carousel-button-right");
-const dotsNav = document.querySelector(".carousel-nav");
-const dots = Array.from(dotsNav.children)
+const clips = document.getElementById("carousel");
+const clipNames = document.querySelector(".clip-names");
+const rightBtn = document.getElementById("right-btn");
+const leftBtn = document.getElementById("left-btn");
 
-const slideWidth = slides[0].getBoundingClientRect().width;
+// Images are from unsplash
+let reels = [
+  "videos/spor_original.mp4",
+  "videos/sunday_skate_video.mp4 ",
+  "videos/wivb_pkg.mp4 "
+];
+let clipList = [
+  "Sweet Plans of Revenge",
+  "Sunday Skate Movie",
+  "WIVB Sabres Package"
+] 
 
-/*
-slides[0].style.left = slideWidth * 0 + "px";
-slides[1].style.left = slideWidth * 1 + "px";
-slides[1].style.left = slideWidth * 2 + "px";
-*/
+clipNames.textContent= clipList[0]
+clips.src = reels[0];
 
-const setSlidePosition = (slide, index) => {
-    slide.style.left = slideWidth * index + "px"
+let position = 0;
+
+const moveRight = () => {
+  if (position >= reels.length - 1 && position >= clipList.length - 1) {
+    position = 0;
+    clips.src = reels[position];
+    clipNames.textContent = clipList[position]
+    return;
+  }
+  clips.src = reels[position + 1];
+  clipNames.textContent = clipList[position + 1]
+  position++;
+};
+
+const moveLeft = () => {
+  if (position < 1 ) {
+    position = reels.length - 1;
+    clips.src = reels[position];
+    clipNames.textContent = clipList[position]
+    return;
+  }
+  clips.src = reels[position - 1];
+  clipNames.textContent = clipList[position -1]
+  position--;
+};
+
+rightBtn.addEventListener("click", moveRight);
+leftBtn.addEventListener("click", moveLeft);
+
+let rapGame = document.querySelector(".rap-game");
+rapGame.onclick = function() {
+ window.open("https://c-lew-on-truth.github.io/real-rap-fans/")
 }
-
-slides.forEach(setSlidePosition)
-
-const moveToSlide = (track, currentSlide, targetSlide) => {
-    track.style.transform = "translateX(-" + targetSlide.style.left + ")";
-    currentSlide.classList.remove("current-slide");
-    targetSlide.classList.add("current-slide")
-}
-
-const updateDots = (currentDot, targetDot) => {
-    currentDot.classList.remove("current-slide");
-    targetDot.classList.add("current-slide")
-}
-
-const hideSlideButtons = (slides, leftButton,  rightButton, targetIndex) => {
-    if(targetIndex === 0 ) {
-        leftButton.classList.add("hidden")
-        rightButton.classList.remove("hidden")
-    } else if (targetIndex === slides.length - 1) {
-        leftButton.classList.remove("hidden")
-        rightButton.classList.add("hidden")
-    } else {
-        rightButton.classList.remove("hidden")
-        leftButton.classList.remove("hidden")
-    }
-}
-
-leftButton.addEventListener("click", e => {
-    const currentSlide = track.querySelector(".current-slide");
-    const prevSlide = currentSlide.previousElementSibling;
-    const currentDot = dotsNav.querySelector(".current-slide")
-    const prevDot = currentDot.previousElementSibling
-    const prevIndex = slides.findIndex(slide => slide === prevSlide)
-
-    moveToSlide(track, currentSlide, prevSlide)
-    updateDots(currentDot, prevDot)
-    hideSlideButtons(slides, leftButton, rightButton, prevIndex)
-})
-
-rightButton.addEventListener("click", e => {
-    const currentSlide = track.querySelector(".current-slide");
-    const nextSlide = currentSlide.nextElementSibling;
-    const currentDot = dotsNav.querySelector(".current-slide")
-    const nextDot = currentDot.nextElementSibling;
-    const nextIndex = slides.findIndex(slide => slide === nextSlide)
-
-    moveToSlide(track, currentSlide, nextSlide);
-    updateDots(currentDot, nextDot);
-    hideSlideButtons(slides, leftButton, rightButton, nextIndex)
-    
-})
-
-dotsNav.addEventListener("click", e => {
-    const targetDot = e.target.closest("button");
-
-    if(!targetDot) return
-    
-    const currentSlide = track.querySelector(".current-slide"); 
-    const currentDot = dotsNav.querySelector(".current-slide"); 
-    const targetIndex = dots.findIndex( dot => dot === targetDot) 
-        console.log(targetIndex)
-    const targetSlide = slides[targetIndex]
-    moveToSlide(track, currentSlide, targetSlide)
-    currentDot.classList.remove("current-slide");
-    targetDot.classList.add("current-slide")
-
-    updateDots(currentDot, targetDot)
-    hideSlideButtons(slides, leftButton,  rightButton, targetIndex)
-})
-
+console.log("SEEN")

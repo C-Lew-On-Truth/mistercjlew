@@ -4,7 +4,7 @@ const navBar = document.querySelector(".nav-bar");
 const proBar = document.querySelector(".pro-bar");
 let content = document.querySelector(".content");
 
-content.src = "about.html"
+content.src = "projects.html"
 
 navBar.onclick = (ev) => {
   let target = ev.target.className;
@@ -18,6 +18,9 @@ navBar.onclick = (ev) => {
     case "contact":
       content.src = "contact.html";
       break;
+      case "projects":
+        content.src = "projects.html";
+        break;
   }
 };
 

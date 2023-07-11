@@ -1,0 +1,190 @@
+::-webkit-scrollbar {
+    width: 6px;
+    background: black;
+    height: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #A47028;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #A47028;
+}
+
+
+.projects {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    color: #a47028;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.inner-projects {
+    position: relative;
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.demo-reels, .web-work {
+    border: dashed .5px #a47028;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    overflow: hidden;
+    justify-content: space-evenly;
+}
+
+.inner-projects h2 {
+    margin: 0;
+}
+
+.demo-reels {
+    position: relative;
+    width: 60%;
+   
+}
+
+.demos {
+    object-fit: contain;
+}
+
+.web-work {
+    width: 35%;
+}
+
+/*------------- Video Slider Code--------------*/
+.video-player {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    background:yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*  box-shadow is from materialize css's website */
+
+}
+
+.clip-names {
+    color:#A47028;
+    background:green;
+}
+
+.container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+button {
+    height: 10%;
+    border: none;
+    outline: none;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    
+    display: flex;
+}
+
+button {
+
+    color: white;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 10px;
+    transition: transform 0.3s ease-out;
+    outline: none;
+}
+
+#right-btn, #left-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#right-btn {
+    right: -50px;
+}
+
+#right-btn .arrow {
+    transform: rotate(-45deg);
+}
+
+#left-btn {
+    left: -50px;
+}
+
+#left-btn .arrow {
+    transform: rotate(135deg);
+}
+
+/*------------- Video Slider Code--------------*/
+
+.project-list {
+    background:green;
+    height:70%;
+    width:90%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+
+.rap-game {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+    .projects {
+        height: auto
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .projects {
+        height: auto
+    }
+
+    .inner-projects {
+        width: 95%;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .demo-reels, .web-work {
+        width: 95%;
+        margin: 3%
+    }
+
+    .demo-reels {
+        height: 400px;
+    }
+
+    .web-work {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {}

@@ -101,24 +101,24 @@
 }
 
 .ny-1 {
-  background-image: url("../media/ny1.jpg");
+  background-image: url("../images/ny1.jpg");
   background-size: 90%;
   background-color: #203265;
 }
 
 .meredith {
-  background-image: url("../media/meredith.jpg");
+  background-image: url("../images/meredith.jpg");
   background-size: 130%;
   background-color: white;
 }
 
 .adobe {
-  background-image: url("../media/adobe.jpg");
+  background-image: url("../images/adobe.jpg");
   background-size: contain;
 }
 
 .seen-this {
-  background-image: url("../media/SeenThis.jpeg");
+  background-image: url("../images/SeenThis.jpeg");
   background-size: 90%;;
   background-color: white;
 }
