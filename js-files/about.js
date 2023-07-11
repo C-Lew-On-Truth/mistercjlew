@@ -13,11 +13,11 @@ setTimeout(() => {
   intro.style.opacity = 1;
   intro.textContent = "I'm Clayton Lewis";
 }, 3000);
-
+/*
 setTimeout(() => {
   thankMessage.style.opacity = 1;
 }, 1000);
-
+*/
 setTimeout(() => {
   thankYouHolder.style.top = "-500px";
   pic.style.bottom = "-2px";
