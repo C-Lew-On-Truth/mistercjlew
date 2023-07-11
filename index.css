@@ -77,28 +77,26 @@ title {
   z-index: 1;
 }
 
-.pro-bar li:nth-child(1) {
-  background-image: url(images/github-logo.png);
-  background-size: 15%;
+.pro-bar li {
+  background-size: 30px;
   background-repeat: no-repeat;
   background-position: center;
   transition:.5s;
+}
+
+.pro-bar li:nth-child(1) {
+  background-image: url(images/github-logo.png);
+
 }
 
 .pro-bar li:nth-child(2) {
   background-image: url(images/linked-in-black.png);
-  background-size: 12%;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition:.5s;
+
 }
 
 .pro-bar li:nth-child(3) {
   background-image: url(images/codepen.png);
-  background-size: 12%;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition:.5s;
+
 }
 
 .pro-bar li:nth-child(1):hover {
@@ -175,6 +173,12 @@ iframe {
     height: 80%;
     overflow-y: scroll !important;
     border: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-bar li {
+    font-size:16px;
   }
 }
 
