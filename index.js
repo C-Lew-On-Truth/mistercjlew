@@ -4,8 +4,6 @@ const navBar = document.querySelector(".nav-bar");
 const proBar = document.querySelector(".pro-bar");
 let content = document.querySelector(".content");
 
-content.src = "projects.html";
-
 navBar.onclick = (ev) => {
   let target = ev.target.className;
   switch (target) {

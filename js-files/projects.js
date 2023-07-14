@@ -55,29 +55,30 @@ leftBtn.addEventListener("click", moveLeft);
 /*--------demo reel carousel code-----------*/
 
 /*--------rap quiz code -----------*/
-let recordGif = document.querySelector(".record-gif");
+let recordGif = document.querySelector(".inner-record-gif");
 let rapQuizInfo = document.querySelector(".rap-quiz-info");
 let rapQuizEntry = document.querySelector(".rap-quiz-entry");
 let exitRapEntry = document.querySelector(".exit-rap-entry");
 recordGif .onclick = function() {
  window.open("https://c-lew-on-truth.github.io/real-rap-fans/");
-}
+}  
+
+
+
 
 rapQuizInfo.onclick = function() {
-  rapQuizEntry.style.transition = ".5s"
   setTimeout(() => {
     rapQuizEntry.style.display = "flex";
-  
   }, 100)
  
   setTimeout(() => {
-    rapQuizEntry.style.opacity = ".5s";
+    rapQuizEntry.style.opacity = 1
   }, 500)
 
 }
 
 exitRapEntry.onclick = function() {
-  rapQuizEntry.style.transition = "1s"
+  //rapQuizEntry.style.transition = "1s"
   setTimeout(() => {
     rapQuizEntry.style.display = "none";
   }, 1000)
