@@ -3,8 +3,9 @@
 const navBar = document.querySelector(".nav-bar");
 const proBar = document.querySelector(".pro-bar");
 let content = document.querySelector(".content");
-const bodyContainer = document.querySelector(".body-container")
-const siteIntroContatiner = document.querySelector(".site-intro-contatiner")
+
+let bodyContainer = document.querySelector(".body-container")
+let siteIntroContatiner = document.querySelector(".site-intro-contatiner")
 bodyContainer.style.backgroundImage = "url(images/lightning-giphy.gif)"
 setTimeout(() => {
   bodyContainer.style.backgroundImage = "none"
@@ -21,7 +22,7 @@ let projects = document.querySelector(".nav-bar .projects");
 
 navBar.onclick = (ev) => {
   let target = ev.target.className;
-  siteIntroContatiner.hidden = true;
+  siteIntroContatiner.style.display = "none";
   switch (target) {
     case "about":
       content.src = "about.html";
@@ -35,9 +36,10 @@ navBar.onclick = (ev) => {
     case "projects":
       content.src = "projects.html";
       break;
+      
       case "home":
-        content.src = "";
-        siteIntroContatiner.hidden = false
+        siteIntroContatiner.style.display = "block";
+        content.src = ""
         break;
   }
 };

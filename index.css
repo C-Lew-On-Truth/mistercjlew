@@ -176,7 +176,8 @@ iframe {
 
 @media only screen and (max-width: 1000px) {
   .body-container {
-    height: 100dvh;
+    height: 100dvh
+ 
   }
 
   iframe {
