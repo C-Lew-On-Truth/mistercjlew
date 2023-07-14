@@ -50,6 +50,7 @@
   border: .5px dashed;
   width: 25%;
   height: 80%;
+  background: rgb(164, 112, 40, 0.2);
 }
 
 .info-1 h2, .info-2 h2 {

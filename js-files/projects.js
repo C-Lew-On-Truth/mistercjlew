@@ -62,12 +62,14 @@ recordGif .onclick = function() {
 }
 
 rapQuizInfo.onclick = function() {
-  rapQuizEntry.style.transition = "1s"
+  rapQuizEntry.style.transition = ".5s"
   setTimeout(() => {
     rapQuizEntry.style.display = "flex";
+  
   }, 100)
+ 
   setTimeout(() => {
-    rapQuizEntry.style.opacity = 1;
+    rapQuizEntry.style.opacity = ".5s";
   }, 500)
 
 }

@@ -40,7 +40,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   overflow: hidden;
   justify-content: space-evenly;
 }
@@ -68,41 +67,36 @@
   background: rgb(164, 112, 40, 0.2);
 }
 
-.record-gif {
+.record-gif-holder {
+  height:50%;
   position: relative;
-  display: flex;
+  width:100%;
+  display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 60%;
-  height: 60%;
 }
 
-.record-gif img {
-  width: 90%;
-  height: 90%;
-  transition: 0.5s;
+.record-gif {
+  position:absolute;
 }
 
-.record-gif img:hover {
-  width: 95%;
-  height: 95%;
-}
 
 .rap-quiz-info {
   margin: 0;
   text-shadow: 1px 1px black;
   animation: blink 0.9s linear infinite;
-  transition: 1s;
 }
 
 @keyframes blink {
   0% {
     color: #a47028;
   }
+
   50% {
     color: white;
   }
+
   100% {
     color: #a47028;
   }
@@ -112,6 +106,11 @@
   animation: none;
   transform: scale(120%);
   color: white;
+
+}
+
+.rap-quiz-info:not(:hover) {
+
 }
 
 .rap-quiz-entry {
@@ -137,6 +136,7 @@
   font-size: 14px !important;
   font-style: italic;
 }
+
 .line-2 {
   margin-top: -10px;
   font-size: 20px;
@@ -150,7 +150,7 @@
 }
 
 .exit-rap-entry {
-    margin-top:-20px;
+  margin-top: -20px;
   cursor: pointer;
   display: grid;
   place-items: center;
@@ -194,9 +194,7 @@
   /*  box-shadow is from materialize css's website */
 }
 
-#carousel {
-  transition: 0.5s;
-}
+
 
 .clip-names {
   color: #a47028;
@@ -217,7 +215,6 @@
   font-size: 40px;
   font-weight: 400;
   text-shadow: 0.5px 0.5px white;
-  transition: 0.5s;
   user-select: none;
 }
 
@@ -270,20 +267,9 @@
     height: 400px;
   }
 
-  .record-gif {
-    width: 50%;
-    height: 60%;
-  }
-  
-  .record-gif img {
-    width: 70%;
-    height: 70%;
-  }
-  
-  .record-gif img:hover {
-    width: 80%;
-    height: 80%;
-  }
+
+
+
 }
 
 /*

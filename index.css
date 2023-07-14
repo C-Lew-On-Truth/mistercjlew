@@ -3,12 +3,15 @@
   border: 0;
   overflow: hidden;
   background-color: black;
+  background: rgb(164, 112, 40, 0.2);
+
 }
 
 title {
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif impot !important;
-  background:green;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif impot !important;
+  background: green;
 }
+
 
 /*
 ::-webkit-scrollbar {
@@ -28,7 +31,7 @@ title {
 */
 
 .body-container {
- /* background-image: url(media/lightning-giphy.gif);*/
+  /* background-image: url(media/lightning-giphy.gif);*/
   position: relative;
   box-sizing: border-box;
   font-family: Impact;
@@ -56,13 +59,12 @@ title {
 
 .nav-bar {
   top: 0;
-  justify-content: space-evenly
-  ;
+  justify-content: space-evenly;
 }
 
 .pro-bar {
   bottom: 0;
-   justify-content: center;
+  justify-content: center;
 }
 
 .nav-bar li, .pro-bar li {
@@ -81,7 +83,7 @@ title {
   background-size: 30px;
   background-repeat: no-repeat;
   background-position: center;
-  transition:.5s;
+  transition: .5s;
 }
 
 .pro-bar li:nth-child(1) {
@@ -99,13 +101,6 @@ title {
 
 }
 
-.pro-bar li:nth-child(1):hover {
-  background-size:18%;
-}
-.pro-bar li:nth-child(2):hover,
-.pro-bar li:nth-child(3):hover {
-  background-size:16%;
-}
 
 .nav-bar {
   top: 0;
@@ -126,17 +121,23 @@ title {
   width: 33.3%;
   font-size: 18px;
   cursor: pointer;
-  color:black;
+  color: black;
   border: 1px transparent solid
 }
 
 .nav-bar li {
-  width:25%;
+  width: 25%;
 }
 
 .pro-bar li {
-  width:15%;
+  width: 15%;
 }
+
+  .pro-bar li:nth-child(1):hover,
+  .pro-bar li:nth-child(2):hover,
+  .pro-bar li:nth-child(3):hover {
+    background-size: 35px;
+  }
 
 .nav-bar li:hover {
   background: black;
@@ -147,9 +148,9 @@ title {
 iframe {
   border: 0;
   margin: 0;
-  width: 90%;
-  height: 80%;
-  border: 1px dashed #a47028;
+  width: 100%;
+  height: 90%;
+  background: rgb(164, 112, 40, 0.2);
   z-index: 5;
 }
 
@@ -169,22 +170,34 @@ iframe {
 
   iframe {
     width: 100%;
-    height: 70%;
-    height: 80%;
+    height: 88%;
     overflow-y: scroll !important;
     border: 0;
+
   }
 }
 
 @media only screen and (max-width: 600px) {
   .nav-bar li {
-    font-size:16px;
+    font-size: 16px;
+  }
+
+  .pro-bar li:nth-child(1),
+  .pro-bar li:nth-child(2),
+  .pro-bar li:nth-child(3) {
+    background-size: 20px;
+  }
+
+  .pro-bar li:nth-child(1):hover,
+  .pro-bar li:nth-child(2):hover,
+  .pro-bar li:nth-child(3):hover {
+    background-size: 25px;
   }
 }
 
 
 @media only screen and (max-width: 300px) {
   iframe {
-    width:90%;
+    width: 90%;
   }
 }
