@@ -9,12 +9,14 @@ const leftBtn = document.getElementById("left-btn");
 let reels = [
   "videos/spor_original.mp4",
   "videos/sunday_skate_video.mp4 ",
-  "videos/wivb_pkg.mp4 "
+  "videos/wivb_pkg.mp4 ",
+  "videos/resized_Burns Feature.mp4"
 ];
 let clipList = [
   "Sweet Plans of Revenge",
   "Sunday Skate Movie",
-  "WIVB Sabres Package"
+  "WIVB Sabres Package",
+  "Brett Burns Demo Reel",
 ] 
 
 clipNames.textContent = clipList[0]
