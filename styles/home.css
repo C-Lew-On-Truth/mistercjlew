@@ -1,0 +1,58 @@
+::-webkit-scrollbar {
+  width: 6px;
+  background: black;
+  height: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a47028;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a47028;
+}
+
+.home {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #a47028;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  opacity:0;
+  transition: 1s;
+}
+
+.home h1 {
+  text-align: center;
+}
+
+.home-container {
+  width: 100%;
+  border: dashed 0.5px solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  height: 80vh;
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 900px) {
+  .home-container {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: auto
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  
+
+}
