@@ -4,25 +4,17 @@ const navBar = document.querySelector(".nav-bar");
 const proBar = document.querySelector(".pro-bar");
 let content = document.querySelector(".content");
 
-let bodyContainer = document.querySelector(".body-container")
-let siteIntroContatiner = document.querySelector(".site-intro-contatiner")
-bodyContainer.style.backgroundImage = "url(images/lightning-giphy.gif)"
+let siteIntroContainer = document.querySelector(".site-intro-container");
+siteIntroContainer.style.backgroundImage = "url(images/lightning-giphy.gif)";
 setTimeout(() => {
-  bodyContainer.style.backgroundImage = "none"
-  siteIntroContatiner.style.transition = "1s"
-  siteIntroContatiner.style.opacity = 1
-},3000)
+  siteIntroContainer.style.opacity = 0;
+}, 3000);
 
-/*
-let about = document.querySelector(".about");
-let experience = document.querySelector(".nav-bar .experience");
-let contact = document.querySelector(".nav-bar .contact");
-let projects = document.querySelector(".nav-bar .projects");
-*/
 
+content.src = "home.html";
 navBar.onclick = (ev) => {
   let target = ev.target.className;
-  siteIntroContatiner.style.display = "none";
+  siteIntroContainer.style.display = "none";
   switch (target) {
     case "about":
       content.src = "about.html";
@@ -36,11 +28,14 @@ navBar.onclick = (ev) => {
     case "projects":
       content.src = "projects.html";
       break;
-      
-      case "home":
-        siteIntroContatiner.style.display = "block";
-        content.src = ""
-        break;
+    case "home":
+      content.src = "home.html";
+      break;
+
+    case "home":
+      siteIntroContatiner.style.display = "block";
+      content.src = "";
+      break;
   }
 };
 
