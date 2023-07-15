@@ -4,31 +4,7 @@
   overflow: hidden;
   background-color: black;
   background: rgb(164, 112, 40, 0.2);
-
 }
-
-title {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif impot !important;
-  background: green;
-}
-
-
-/*
-::-webkit-scrollbar {
-    width: 6px;
-    background: black;
-    height: 20px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #A47028;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #A47028;
-}
-*/
 
 .body-container {
   background-position: center;
@@ -79,7 +55,6 @@ title {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 33.3%;
   font-size: 18px;
   cursor: pointer;
   color: black;
@@ -131,7 +106,6 @@ title {
   animation:  navsBlink 0.9s linear infinite !important;
 }
 
-
 @keyframes navsBlink {
   0% {
     color: black;
@@ -155,7 +129,6 @@ title {
   background-position: center;
 }
 
-
 iframe {
   border: 0;
   margin: 0;
@@ -177,7 +150,6 @@ iframe {
 @media only screen and (max-width: 1000px) {
   .body-container {
     height: 100dvh
- 
   }
 
   iframe {
@@ -209,8 +181,12 @@ iframe {
 
 
 @media only screen and (max-width: 300px) {
+  .body-container {
+    background-repeat: no-repeat;
+  }
+
   .nav-bar li {
-    font-size: 12px;
+    font-size: 10px;
   }
   iframe {
     width: 90%;
