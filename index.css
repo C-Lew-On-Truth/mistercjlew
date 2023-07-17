@@ -98,14 +98,6 @@
   border-bottom: #A47028 solid 1px;
 }
 
-.pageSelected {
-  background: black !important;
-  color: #A47028 !important;
-  border-bottom: #A47028 solid 1px !important;
-  z-index: 2 !important;
-  animation:  navsBlink 0.9s linear infinite !important;
-}
-
 @keyframes navsBlink {
   0% {
     color: black;
@@ -157,13 +149,14 @@ iframe {
     height: 88%;
     overflow-y: scroll !important;
     border: 0;
-
   }
 }
 
 @media only screen and (max-width: 600px) {
+
   .nav-bar li {
     font-size: 16px;
+
   }
 
   .pro-bar li:nth-child(1),
@@ -189,6 +182,6 @@ iframe {
     font-size: 10px;
   }
   iframe {
-    width: 90%;
+    width: 95%;
   }
 }

@@ -57,6 +57,7 @@
 .work h2,
 .skills h2 {
   text-align: center;
+  text-shadow: .5px .5px black;
 }
 
 .work-inner {
@@ -67,6 +68,7 @@
   flex-wrap: wrap;
   border: .5px dashed;
   height: 100%;
+  background: rgb(164, 112, 40, 0.2);
 }
 
 .companies {
@@ -81,12 +83,14 @@
   margin-top: 10px;
   font-size: 17px;
   text-align: center;
+  text-shadow: .5px .5px black;
 }
 
 .companies h4 {
   margin-top: -10px;
   text-align: center;
   font-size: 14px;
+  text-shadow: .5px .5px black;
 }
 
 .icon {
@@ -119,7 +123,8 @@
 
 .seen-this {
   background-image: url("../images/SeenThis.jpeg");
-  background-size: 90%;;
+  background-size: 90%;
+  ;
   background-color: white;
 }
 
@@ -141,12 +146,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  background: rgb(164, 112, 40, 0.2);
 }
 
 .web-skills.div,
 .media-skills.div {
   display: inline-block;
-  text-align: center;
+  text-align: center
 }
 
 .web-skills h3,
@@ -163,19 +169,30 @@
   font-size: 20px;
 }
 
-.media-list,
-.web-list {
+
+.web-list, .media-list {
   margin-bottom: 5%;
-  width: 50%;
   height: 200px;
   margin: 2% auto;
+  height: 200px;
+}
+.web-list{
+  width: 50%;
+}
+.media-list {
+  width:70%;
+
 }
 
 .web-list.ul,
 .media-list.ul {
   width: 100;
   height: 100%;
-  text-align: left;
+  text-align: center;
+}
+
+.media-list ul {
+  text-align: center;
 }
 
 
@@ -183,6 +200,13 @@
 .media-list li {
   text-shadow: 1px 1px black;
   font-size: 17px;
+
+}
+
+.media-list li {
+  width: 100%;
+  margin-right:10px !important;
+
 }
 
 .resume {
@@ -195,7 +219,6 @@
   width: 120px;
   height: 35px;
   text-shadow: 2px 2px black;
-  ;
   font-size: 25px;
 }
 
@@ -208,6 +231,7 @@
 }
 
 @media only screen and (max-width: 1200px) {
+
   .web-list li,
   .media-list li {
     text-shadow: 1px 1px black;
@@ -225,14 +249,23 @@
   .skills, .work {
     margin: 5% auto;
     width: 100%;
-    height: auto
+    height: auto;
   }
 
   .work-inner {
     border: 0;
     flex-wrap: nowrap;
     width: 100%;
+    background:transparent;
   }
+
+
+  .media-skills,
+  .web-skills {
+    background:transparent;
+    border:0;
+  }
+
 
   .companies {
     display: grid;
@@ -243,7 +276,7 @@
   .companies h3 {
     font-size: 15px;
   }
-  
+
   .companies h4 {
     font-size: 11px;
   }
@@ -255,22 +288,17 @@
     width: 100%;
   }
 
-  .media-skills,
-  .web-skills {
-    width: 60%;
-    border: 0;
-  }
 
   .web-skills h3,
-.media-skills h3 {
-  border: 1px solid #a47028;
-  background-color: #a47028;
-  width: 140px;
-  padding: 3px;
-  display: grid;
-  place-items: center;
-  text-align: center;
-  color: black;
-  font-size: 17px;
-}
+  .media-skills h3 {
+    border: 1px solid #a47028;
+    background-color: #a47028;
+    width: 140px;
+    padding: 3px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: black;
+    font-size: 17px;
+  }
 }

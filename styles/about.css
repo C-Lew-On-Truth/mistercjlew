@@ -100,51 +100,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height:80%;
+  height:70%;
+  width:400px;
+  background-image:url("../images/muppet.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.bitmoji-pic {
-  margin-top:20px;
-  width: 300px;
-  height: 300px;
-  border: .5px dashed;
-  overflow: hidden;
-  position: relative;
-}
 
-.thank-message {
-  position: absolute;
-  top: 0;
-  height: 300px;
-  width: 300px;
-  font-size: 35px;
-  display: grid;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: 1.5s;
-}
-
-.thank-message p {
-  opacity: 0;
-  transition: 1.5s;
-  text-shadow: 1px 1px black;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-}
-
-.pic {
-  width: 300px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -500px;
-  transition: 1.5s;
-}
-
-.intro-statement {
-  font-size:20px;
-  text-shadow: 1px 1px black;
-}
 
 @media only screen and (max-width: 1000px) {
   .about {
@@ -161,6 +125,8 @@
     position: unset;
     transform: none;
     margin: 2%;
+    width:80%;
+    height:350px;
   }
 
   .info-1, .info-2 {
