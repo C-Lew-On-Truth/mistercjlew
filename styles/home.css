@@ -24,6 +24,7 @@
   width: 100%;
   opacity: 1;
   transition: 1s;
+  overflow-X: hidden;
 }
 
 .home h1 {
@@ -33,20 +34,26 @@
 }
 
 .home-container {
-  width: 100%;
+  width: 95%;
   border: dashed 0.5px solid;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: row;
   height: 80vh;
+  overflow-X: hidden;
 }
 
-.home-container p {
-  position: absolute;
+.intro-statement {
+
   color: #a47028;
   text-shadow: 1px 1px black;
   font-size: 19px;
+}
+
+.thank-you-message {
+  position: absolute;
+  transition: 4s;
 }
 
 @media only screen and (max-width: 1200px) {}
