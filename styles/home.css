@@ -14,9 +14,10 @@
 }
 
 .home {
+  position: relative;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: #a47028;
-  overflow: hidden;
+  overflow: hidden !important;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,46 +25,114 @@
   width: 100%;
   opacity: 1;
   transition: 1s;
-  overflow-X: hidden;
-}
-
-.home h1 {
-  text-align: center;
-  text-shadow: 1px solid black;
-  ;
 }
 
 .home-container {
+  position: relative;
   width: 95%;
   border: dashed 0.5px solid;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: row;
-  height: 80vh;
-  overflow-X: hidden;
+  height: 97.7vh;
+  overflow: hidden;
+}
+
+.intro {
+  width:550px;
+  margin-left:150px;
+  color: #a47028;
+  top:55%;
+}
+
+.name {
+  font-size:35px;
+  text-shadow: 1px 1px black;
+  opacity:0;
+  transition: 1s;
 }
 
 .intro-statement {
-  color: #a47028;
+  margin-top:-5px;
   text-shadow: 1px 1px black;
-  font-size: 19px;
+  font-size: 24px;
+  font-style: italic;
+  opacity:0;
+  transition: 1s;
 }
 
-.thank-you-message {
-  position: absolute;
-  transition: 4s;
+.intro-image {
+  margin-right:50px;
+  transition: 1s;
+  margin-bottom: -70px;
+  width: 40%;
+  height: 90%;
+  background-image: url("../images/shaded_profile-pic.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0;
 }
 
-@media only screen and (max-width: 1200px) {}
+@media only screen and (max-width: 1200px) {
+
+  .home-container {
+    position: relative;
+    width: 100%;
+    border: dashed 0.5px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    height: 97.7vh;
+    overflow: hidden;
+  }
+  
+  .intro {
+    width:550px;
+    margin-left:150px;
+    color: #a47028;
+    top:55%;
+  }
+  
+  .name {
+    font-size:35px;
+    text-shadow: 1px 1px black;
+    opacity:0;
+    transition: 1s;
+  }
+  
+  .intro-statement {
+    margin-top:-20px;
+    text-shadow: 1px 1px black;
+    font-size: 24px;
+    font-style: italic;
+    opacity:0;
+    transition: 1s;
+  }
+  
+  .intro-image {
+    margin-right:50px;
+    transition: 1s;
+    margin-bottom: -150px;
+    width: 40%;
+    height: 90%;
+    background-image: url("../images/shaded_profile-pic.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0;
+  }
+}
 
 @media only screen and (max-width: 900px) {
   .home-container {
     flex-direction: column;
     justify-content: space-evenly;
-    height: auto
+    height: auto;
   }
-
 }
 
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+}

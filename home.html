@@ -10,19 +10,40 @@
 
   <body>
     <div class="home">
-      <h1>I'm Clayton Lewis</h1>
+
       <div class="home-container">
-        <p class="intro-statement">
-          I'm a technically savy multimedia professional with solid front-end development capabilities.
-        </p>
-      
+
+     
+        <div class="intro">
+          <h1 class="name">I'm Clayton Lewis...</h1>
+         <p class="intro-statement">
+          and I'm a technically savvy multimedia professional with solid front-end development capabilities.
+         </p>
+      </div>
+
+        <div class="intro-image"></div>
     </div>
+
     <script>
       let home = document.querySelector(".home");
-
       setTimeout(() => {
         home.style.opacity = 1;
       }, 1000);
+
+      let name = document.querySelector(".name");
+      setTimeout(() => {
+        name.style.opacity = 1;
+      }, 2500);
+
+      let introStatement = document.querySelector(".intro-statement");
+      setTimeout(() => {
+        introStatement.style.opacity = 1;
+      }, 2800);
+
+      let introImage = document.querySelector(".intro-image ");
+      setTimeout(() => {
+        introImage.style.opacity = ".7"
+      }, 3000);
     </script>
   </body>
 </html>
