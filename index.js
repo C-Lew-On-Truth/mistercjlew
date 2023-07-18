@@ -11,7 +11,7 @@ setTimeout(() => {
 }, 3000);
 
 
-content.src = "projects.html";
+content.src = "home.html";
 navBar.onclick = (ev) => {
   let target = ev.target.className;
   siteIntroContainer.style.display = "none";
