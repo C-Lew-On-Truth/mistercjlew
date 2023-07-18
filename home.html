@@ -12,7 +12,11 @@
     <div class="home">
 
       <div class="home-container">
-
+        <div class="bitmoji">
+          <div class="pic">
+            <img src="../images/tranparent-bitmoji.png"/>
+          </div>
+        </div>
      
         <div class="intro">
           <h1 class="name">I'm Clayton Lewis...</h1>
@@ -20,6 +24,8 @@
           and I'm a technically savvy multimedia professional with solid front-end development capabilities.
          </p>
       </div>
+
+
 
         <div class="intro-image">
           <img src="../images/shaded_profile-pic.png"/>
@@ -41,10 +47,22 @@
       setTimeout(() => {
         introStatement.style.opacity = 1;
       }, 2800);
+      
+      let bitmoji = document.querySelector(".bitmoji");
+      setTimeout(() => {
+        bitmoji.style.opacity = 1;
+      }, 2800);
+
+
 
       let introImage = document.querySelector(".intro-image ");
       setTimeout(() => {
         introImage.style.opacity = ".7"
+      }, 3000);
+
+      let pic = document.querySelector(".pic ");
+      setTimeout(() => {
+        pic.style.bottom = "0"
       }, 3000);
     </script>
   </body>
