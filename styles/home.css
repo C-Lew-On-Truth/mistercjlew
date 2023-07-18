@@ -65,73 +65,47 @@
 .intro-image {
   margin-right:50px;
   transition: 1s;
-  margin-bottom: -70px;
-  width: 40%;
+  margin-bottom: -90px;
   height: 90%;
-  background-image: url("../images/shaded_profile-pic.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
   opacity: 0;
+  width:500px;
+}
+
+.intro-image img {
+  width: 100%;
 }
 
 @media only screen and (max-width: 1200px) {
+  .home {
+    overflow:hidden;
+    height:97vh
+  }
 
   .home-container {
     position: relative;
-    width: 100%;
-    border: dashed 0.5px solid;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: row;
-    height: 97.7vh;
-    overflow: hidden;
+    width: 100vw;
+   
   }
   
   .intro {
     width:550px;
-    margin-left:150px;
     color: #a47028;
-    top:55%;
-  }
-  
-  .name {
-    font-size:35px;
-    text-shadow: 1px 1px black;
-    opacity:0;
-    transition: 1s;
-  }
-  
-  .intro-statement {
-    margin-top:-20px;
-    text-shadow: 1px 1px black;
-    font-size: 24px;
-    font-style: italic;
-    opacity:0;
-    transition: 1s;
+    margin-left:0;
+    z-index: 1;
   }
   
   .intro-image {
-    margin-right:50px;
+
+    bottom:-120px;
     transition: 1s;
-    margin-bottom: -150px;
-    width: 40%;
-    height: 90%;
-    background-image: url("../images/shaded_profile-pic.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
     opacity: 0;
+    width:500px;
+    height:500px;
   }
 }
 
 @media only screen and (max-width: 900px) {
-  .home-container {
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: auto;
-  }
+  
 }
 
 @media only screen and (max-width: 600px) {
