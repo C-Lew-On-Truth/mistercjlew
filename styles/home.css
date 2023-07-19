@@ -150,15 +150,42 @@
 }
 
 @media only screen and (max-width: 600px) {
+
+
+  .bitmoji {
+    width:200px;
+    height:200px;;
+
+  }
+  .pic {
+    display:block;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    width:150px;
+    bottom:-400px;;
+    transition: 1s;
+  }
+  .pic img{
+    width:100%;
+  }
   .intro {
     width:90%;
   }
-  
+
   .name {
     font-size:25px;
   }
   
   .intro-statement {
     font-size: 16px;
+    width:95%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .intro-statement {
+    font-size: 14px;
+    width:95%;
   }
 }
