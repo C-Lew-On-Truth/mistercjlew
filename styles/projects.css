@@ -174,7 +174,7 @@
   width: 80px;
   height: 35px;
   text-shadow: 1px 1px black;
-  font-size: px;
+  font-size: 15px;
   color: #a47028;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
@@ -184,6 +184,11 @@
   text-shadow: none;
   background: #a47028;
   color: black;
+}
+
+.rap-quiz-entry span {
+  text-shadow: 1px 1px black;
+  font-size: 12px;
 }
 
 /*------------- Web Projects Style Code--------------*/
