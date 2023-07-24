@@ -4,6 +4,7 @@ const navBar = document.querySelector(".nav-bar");
 const proBar = document.querySelector(".pro-bar");
 let content = document.querySelector(".content");
 
+
 let siteIntroContainer = document.querySelector(".site-intro-container");
 siteIntroContainer.style.backgroundImage = "url(images/lightning-giphy.gif)";
 setTimeout(() => {

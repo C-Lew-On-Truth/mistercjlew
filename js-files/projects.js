@@ -8,9 +8,9 @@ const leftBtn = document.getElementById("left-btn");
 // Images are from unsplash
 let reels = [
   "videos/spor_original.mp4",
-  "videos/sunday_skate_video.mp4 ",
-  "videos/wivb_pkg.mp4 ",
-  "videos/resized_Burns Feature.mp4"
+  "videos/resized_sunday_skate_video.mp4",
+  "videos/resized_wivb_pkg.mp4 ",
+  "videos/brett-burns-kingdom.mp4 "
 ];
 let clipList = [
   "Sweet Plans of Revenge",
