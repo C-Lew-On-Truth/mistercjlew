@@ -1,6 +1,6 @@
 
 /*--------demo reel carousel code-----------*/
-const clips = document.getElementById("carousel");
+const clips = document.querySelector(".clips");
 const clipNames = document.querySelector(".clip-names");
 const rightBtn = document.getElementById("right-btn");
 const leftBtn = document.getElementById("left-btn");
