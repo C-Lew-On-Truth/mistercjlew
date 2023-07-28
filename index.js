@@ -1,9 +1,7 @@
 //console.log(window.innerWidth);
-//import {home} from "/js-files/home.js"
 const navBar = document.querySelector(".nav-bar");
 const proBar = document.querySelector(".pro-bar");
 let content = document.querySelector(".content");
-
 
 let siteIntroContainer = document.querySelector(".site-intro-container");
 siteIntroContainer.style.backgroundImage = "url(images/lightning-giphy.gif)";
@@ -13,7 +11,6 @@ setTimeout(() => {
 }, 3000);
 
 
-//console.log(name)
 
 content.src = "home.html";
 //siteIntroContainer.style.display = "none"
@@ -35,15 +32,6 @@ navBar.onclick = (ev) => {
       break;
     case "home":
       content.src = "home.html";
-
-        //home.style.transition = "none"
-    
-      
-      break;
-
-    case "home":
-      siteIntroContatiner.style.display = "block";
-      content.src = "";
       break;
   }
 };
