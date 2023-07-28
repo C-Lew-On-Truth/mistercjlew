@@ -80,6 +80,7 @@ textarea {
 @media only screen and (max-width: 1200px) {
   .contact-container {
     height:auto;
+    overflow-y: scroll;
   }
 }
 

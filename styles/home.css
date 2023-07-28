@@ -91,7 +91,7 @@
     width: 100vw;
     display:flex;
     flex-direction: column;
- 
+ overflow-y: scroll;
   }
   
   .intro {
