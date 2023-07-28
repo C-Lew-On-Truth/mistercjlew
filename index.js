@@ -9,6 +9,7 @@ let siteIntroContainer = document.querySelector(".site-intro-container");
 siteIntroContainer.style.backgroundImage = "url(images/lightning-giphy.gif)";
 setTimeout(() => {
   siteIntroContainer.style.opacity = 0;
+  siteIntroContainer.style.transition = "1s";
 }, 3000);
 
 
