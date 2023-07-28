@@ -34,7 +34,7 @@
   align-items: center;
   justify-content: space-evenly;
   flex-direction: row;
-  height: 97.7vh;
+ height: 97.7vh;
   overflow: hidden;
 }
 
@@ -83,7 +83,7 @@
 @media only screen and (max-width: 1200px) {
   .home {
     overflow:hidden;
-    height:97vh
+    height:auto;
   }
 
   .home-container {
@@ -91,7 +91,7 @@
     width: 100vw;
     display:flex;
     flex-direction: column;
-   
+ 
   }
   
   .intro {
