@@ -12,7 +12,7 @@ setTimeout(() => {
 
 
 
-content.src = "contact.html";
+content.src = "homt.html";
 //siteIntroContainer.style.display = "none"
 navBar.onclick = (ev) => {
   let target = ev.target.className;
