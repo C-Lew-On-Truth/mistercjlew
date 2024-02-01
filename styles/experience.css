@@ -124,7 +124,6 @@
 .seen-this {
   background-image: url("../images/SeenThis.jpeg");
   background-size: 90%;
-  ;
   background-color: white;
 }
 
@@ -206,7 +205,6 @@
 .media-list li {
   width: 100%;
   margin-right:10px !important;
-
 }
 
 .resume {

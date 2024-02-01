@@ -2,7 +2,6 @@
   margin: 0;
   border: 0;
   overflow: hidden;
-
   background: rgb(164, 112, 40, 0.2);
 }
 
@@ -19,15 +18,15 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  color: #A47028;
+  color: #a47028;
   z-index: 1;
 }
 
-
-.nav-bar, .pro-bar {
+.nav-bar,
+.pro-bar {
   width: 100vw;
   color: black;
-  background: #A47028;
+  background: #a47028;
   height: 50px;
   position: absolute;
   display: flex;
@@ -38,7 +37,7 @@
 }
 
 .nav-bar {
-  top: 0;  
+  top: 0;
   justify-content: space-evenly;
 }
 
@@ -68,7 +67,6 @@
   background-size: 30px;
   background-repeat: no-repeat;
   background-position: center;
-
   width: 15%;
 }
 
@@ -92,13 +90,13 @@
 .pro-bar li:nth-child(2):hover,
 .pro-bar li:nth-child(3):hover {
   background-size: 35px;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .nav-bar li:hover {
   background: black;
-  color: #A47028;
-  border-bottom: #A47028 solid 1px;
+  color: #a47028;
+  border-bottom: #a47028 solid 1px;
 }
 
 @keyframes navsBlink {
@@ -117,11 +115,10 @@
 
 .site-intro-container {
   position: absolute;
-  width:100%;
-  height:87%;
+  width: 100%;
+  height: 87%;
   background-size: contain;
   background-position: center;
-  
 }
 
 iframe {
@@ -143,7 +140,7 @@ iframe {
 
 @media only screen and (max-width: 1000px) {
   .body-container {
-    height: 100dvh
+    height: 100dvh;
   }
 
   iframe {
@@ -155,16 +152,13 @@ iframe {
 }
 
 @media only screen and (max-width: 600px) {
-
-
   .nav-bar {
-    max-width: 100%;;
-
+    max-width: 100%;
   }
 
   .nav-bar li {
     font-size: 16px;
-    width:auto;
+    width: auto;
   }
 
   .pro-bar li:nth-child(1),
@@ -179,7 +173,6 @@ iframe {
     background-size: 25px;
   }
 }
-
 
 @media only screen and (max-width: 300px) {
   .body-container {
