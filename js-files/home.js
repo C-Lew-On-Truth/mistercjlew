@@ -4,7 +4,7 @@ let introStatement = document.querySelector(".intro-statement");
 let bitmoji = document.querySelector(".bitmoji");
 let introImage = document.querySelector(".intro-image-holder");
 let pic = document.querySelector(".pic");
-/*
+
 setTimeout(() => {
   homePage.style.opacity = 1;
 }, 1000);
@@ -28,4 +28,3 @@ setTimeout(() => {
 }, 2000);
 
 
-*/

@@ -2,7 +2,7 @@
 const navBar = document.querySelector(".nav-bar");
 const proBar = document.querySelector(".pro-bar");
 let content = document.querySelector(".content");
-/*
+
 let siteIntroContainer = document.querySelector(".site-intro-container");
 siteIntroContainer.style.backgroundImage = "url(images/lightning-giphy.gif)";
 
@@ -10,11 +10,10 @@ setTimeout(() => {
   siteIntroContainer.style.opacity = 0;
   siteIntroContainer.style.transition = "1s";
 }, 3000);
-*/
+
 
 
 content.src = "home.html";
-/*
 siteIntroContainer.style.display = "none"
 navBar.onclick = (ev) => {
   let target = ev.target.className;
@@ -55,4 +54,3 @@ proBar.onclick = (ev) => {
       break;
   }
 };
-*/
