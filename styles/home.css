@@ -25,6 +25,7 @@
   justify-content: space-evenly;
   width: 100%;
   opacity: 0;
+  opacity:1;
 }
 
 .home-container {
@@ -40,28 +41,35 @@
 }
 
 .intro {
-  width: 30%;
+  width: 35%;
   color: #a47028;
 }
 
 .name {
-  font-size: 35px;
+  font-size: 1.8vw;
   text-shadow: 1px 1px black;
   opacity: 0;
+  opacity:1;
 }
 
 .intro-statement {
   margin-top: -5px;
   text-shadow: 1px 1px black;
-  font-size: 24px;
+  font-size: 1.5vw;
   font-style: italic;
   opacity: 0;
+  opacity:1;
+}
+
+.intro-statement p {
+  width:100%;
 }
 
 .intro-image-holder {
   position: relative;
   height: 100%;
   opacity: 0;
+  opacity:1;
   width: 35%;
 }
 
@@ -70,7 +78,7 @@
   height:100%;
   width:100%;
   background-image: url(/images/shaded-profile-pic.png);
-  background-size: 100%;
+  background-size: 95%;
   background-repeat: no-repeat;
   background-position: center 100%;
 }
@@ -134,6 +142,7 @@
     overflow: hidden;
     margin-bottom: -20px;
     opacity: 0;
+    opacity:1;
   }
   .pic {
     display: block;
