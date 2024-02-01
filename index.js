@@ -5,6 +5,7 @@ let content = document.querySelector(".content");
 
 let siteIntroContainer = document.querySelector(".site-intro-container");
 siteIntroContainer.style.backgroundImage = "url(images/lightning-giphy.gif)";
+
 setTimeout(() => {
   siteIntroContainer.style.opacity = 0;
   siteIntroContainer.style.transition = "1s";
@@ -12,8 +13,8 @@ setTimeout(() => {
 
 
 
-content.src = "homt.html";
-//siteIntroContainer.style.display = "none"
+content.src = "home.html";
+siteIntroContainer.style.display = "none"
 navBar.onclick = (ev) => {
   let target = ev.target.className;
   siteIntroContainer.style.display = "none";

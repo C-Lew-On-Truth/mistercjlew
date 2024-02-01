@@ -1,4 +1,5 @@
 ::-webkit-scrollbar {
+  display:none;
   width: 6px;
   background: black;
   height: 20px;
@@ -34,153 +35,166 @@
   align-items: center;
   justify-content: space-evenly;
   flex-direction: row;
- height: 97.7vh;
+  height: 99.7vh;
   overflow: hidden;
 }
 
 .intro {
-  width:550px;
-  margin-left:150px;
+  width: 30%;
   color: #a47028;
-  top:55%;
 }
 
 .name {
-  font-size:35px;
+  font-size: 35px;
   text-shadow: 1px 1px black;
-  opacity:0;
-
+  opacity: 1;
 }
 
 .intro-statement {
-  margin-top:-5px;
+  margin-top: -5px;
   text-shadow: 1px 1px black;
   font-size: 24px;
   font-style: italic;
-  opacity:0;
+  opacity: 1;
+}
+
+.intro-image-holder {
+  position: relative;
+  height: 100%;
+  opacity: 1;
+  width: 35%;
 }
 
 .intro-image {
-  margin-right:50px;
-  margin-bottom: -90px;
-  height: 90%;
-  opacity: 0;
-  width:500px;
-}
-
-.intro-image img {
-  width: 100%;
+  position: absolute;
+  height:100%;
+  width:100%;
+  background-image: url(/images/shaded-profile-pic.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center 100%;
 }
 
 .bitmoji-pic {
-  display:none;
+  display: none;
 }
 
 .pic {
-  display:none;
+  display: none;
+}
+
+@media only screen and (max-width: 1700px) {
+
+  .intro-image-holder {
+   width:40%
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+
+  .intro-image-holder {
+   width:45%
+  }
 }
 
 @media only screen and (max-width: 1200px) {
+
+
   .home {
-    overflow:hidden;
-    height:auto;
+    overflow: hidden;
+    height: auto;
   }
 
   .home-container {
     position: relative;
     width: 100vw;
-    display:flex;
+    display: flex;
     flex-direction: column;
- overflow-y: scroll;
+    overflow-y: scroll;
   }
-  
+
   .intro {
-    width:550px;
+    width: 550px;
     color: #a47028;
-    margin:0;
+    margin: 0;
     text-align: center;
     z-index: 1;
   }
-  
-  .intro-image {
+
+  .intro-image-holder {
     display:none;
   }
 
   .bitmoji {
     position: relative;
-    display:block;
-    width:300px;
-    height:300px;;
-    border:.5px dashed;
+    display: block;
+    width: 300px;
+    height: 300px;
+    border: 0.5px dashed;
     overflow: hidden;
-    margin-bottom:-20px;
-    opacity:0;
-
+    margin-bottom: -20px;
+    opacity: 0;
   }
   .pic {
-    display:block;
+    display: block;
     position: absolute;
-    left:50%;
+    left: 50%;
     transform: translateX(-50%);
-    width:200px;
-    bottom:-400px;;
+    width: 200px;
+    bottom: -400px;
   }
-  .pic img{
-    width:100%;
+  .pic img {
+    width: 100%;
   }
 }
 
 @media only screen and (max-width: 900px) {
   .intro {
-    width:100%;
+    width: 100%;
   }
-  
+
   .name {
-    font-size:30px;
+    font-size: 30px;
   }
-  
+
   .intro-statement {
     font-size: 20px;
   }
-  
 }
 
 @media only screen and (max-width: 600px) {
-
-
   .bitmoji {
-    width:200px;
-    height:200px;;
-
+    width: 200px;
+    height: 200px;
   }
   .pic {
-    display:block;
+    display: block;
     position: absolute;
-    left:50%;
+    left: 50%;
     transform: translateX(-50%);
-    width:150px;
-    bottom:-400px;;
+    width: 150px;
+    bottom: -400px;
   }
-  .pic img{
-    width:100%;
+  .pic img {
+    width: 100%;
   }
   .intro {
-    width:90%;
+    width: 90%;
   }
 
   .name {
-    font-size:25px;
+    font-size: 25px;
   }
-  
+
   .intro-statement {
     font-size: 16px;
-    width:95%;
+    width: 95%;
   }
 }
 
 @media only screen and (max-width: 400px) {
   .intro-statement {
     font-size: 14px;
-    width:95%;
+    width: 95%;
   }
 }

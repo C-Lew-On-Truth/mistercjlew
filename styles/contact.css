@@ -1,4 +1,5 @@
 ::-webkit-scrollbar {
+  display: none;
   width: 6px;
   background: black;
   height: 20px;
@@ -79,14 +80,14 @@ textarea {
 
 @media only screen and (max-width: 1200px) {
   .contact-container {
-    height:auto;
+    height: auto;
     overflow-y: scroll;
   }
 }
 
 @media only screen and (max-width: 1000px) {
   .contact {
-    width:100vw;
+    width: 100vw;
   }
 
   input[type="text"] {
@@ -98,10 +99,7 @@ textarea {
   }
 }
 
-
-
 @media only screen and (max-width: 900px) {
-
   input[type="text"] {
     width: 60%;
   }
@@ -112,7 +110,6 @@ textarea {
 }
 
 @media only screen and (max-width: 600px) {
-
   input[type="text"] {
     width: 80%;
   }
